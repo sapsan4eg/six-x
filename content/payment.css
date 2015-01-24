@@ -1,0 +1,28 @@
+#for_form_payment
+{
+	min-width: 337px;
+}
+#payment_erros
+{
+	min-width: 236px;
+}
+.payments
+{
+	border: 1px solid #E1E1E1;
+	-webkit-box-shadow: 0 0 3px 0 #E9E9E9;
+	-moz-box-shadow: 0 0 3px 0 #E9E9E9;
+	box-shadow: 0 0 13px 0 #DDDDDD;
+	padding:30px;
+	margin-top:20px;
+}
+.payments h2
+{
+	display: inline;
+}
+#error_title
+{
+	color:#ff0000;
+}
+input[type="text"] {
+	min-width: 150px;
+}

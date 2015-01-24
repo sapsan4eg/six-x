@@ -1,0 +1,862 @@
+2014-09-29 13:41:05 - PHP NOTICE:  Use of undefined constant AUTORIZATION_MULTILOGON - assumed 'AUTORIZATION_MULTILOGON' in C:\i-net\htdocs\mymvc\system\library\simplyAutorization.php on line 96
+2014-09-29 19:49:41 - PHP NOTICE:  Undefined variable: message in C:\i-net\htdocs\mymvc\views\Error\error.tpl on line 3
+2014-09-29 19:50:22 - PHP NOTICE:  Array to string conversion in C:\i-net\htdocs\mymvc\views\Error\error.tpl on line 3
+2014-09-29 20:41:33 - PHP NOTICE:  Use of undefined constant DIR_LOGS - assumed 'DIR_LOGS' in C:\i-net\htdocs\mymvc\controllers\ErrorController.php on line 21
+2014-09-29 20:42:58 - PHP NOTICE:  Indirect modification of overloaded property View::$data has no effect in C:\i-net\htdocs\mymvc\controllers\ErrorController.php on line 23
+2014-10-01 10:55:09 - PHP NOTICE:  Undefined variable: thid in C:\i-net\htdocs\mymvc\controllers\HomeController.php on line 6
+2014-10-01 10:55:09 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\HomeController.php on line 6
+2014-10-01 10:55:09 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\HomeController.php on line 6
+2014-10-01 10:55:44 - PHP NOTICE:  Undefined index: scheme in C:\i-net\htdocs\mymvc\controllers\HomeController.php on line 6
+2014-10-01 10:55:45 - PHP NOTICE:  Undefined index: scheme in C:\i-net\htdocs\mymvc\controllers\HomeController.php on line 6
+2014-10-01 10:56:00 - PHP NOTICE:  Undefined index: scheme in C:\i-net\htdocs\mymvc\controllers\HomeController.php on line 6
+2014-10-01 10:56:01 - PHP NOTICE:  Undefined index: scheme in C:\i-net\htdocs\mymvc\controllers\HomeController.php on line 6
+2014-10-01 10:56:01 - PHP NOTICE:  Undefined index: scheme in C:\i-net\htdocs\mymvc\controllers\HomeController.php on line 6
+2014-10-01 10:56:01 - PHP NOTICE:  Undefined index: scheme in C:\i-net\htdocs\mymvc\controllers\HomeController.php on line 6
+2014-10-01 10:56:01 - PHP NOTICE:  Undefined index: scheme in C:\i-net\htdocs\mymvc\controllers\HomeController.php on line 6
+2014-10-01 10:56:35 - PHP NOTICE:  Undefined index: scheme in C:\i-net\htdocs\mymvc\controllers\HomeController.php on line 6
+2014-10-03 10:36:14 - PHP NOTICE:  Undefined property: Storage::$request in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 18
+2014-10-03 10:36:14 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 18
+2014-10-03 10:36:14 - PHP NOTICE:  Undefined property: Storage::$request in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 18
+2014-10-03 10:36:14 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 18
+2014-10-03 11:40:47 - PHP NOTICE:  Error: Could not load Home from controllers/! in C:\i-net\htdocs\mymvc\system\engine\loader.php on line 10
+2014-10-03 11:41:31 - PHP NOTICE:  Error: Could not load view views/Home/Log.tpl! in C:\i-net\htdocs\mymvc\system\engine\view.php on line 70
+2014-10-03 11:42:03 - PHP NOTICE:  Error: Could not load view views/Home/Log.tpl! in C:\i-net\htdocs\mymvc\system\engine\view.php on line 70
+2014-10-03 11:45:28 - PHP NOTICE:  Error: Could not load view views/Home/Log.tpl! in C:\i-net\htdocs\mymvc\system\engine\view.php on line 70
+2014-10-03 11:45:42 - PHP NOTICE:  Error: Could not load view views/Home/Log.tpl! in C:\i-net\htdocs\mymvc\system\engine\view.php on line 70
+2014-10-03 11:48:15 - PHP NOTICE:  Error: Could not load view views/ErrorController/Log.tpl! in C:\i-net\htdocs\mymvc\system\engine\view.php on line 70
+2014-10-03 11:50:54 - PHP NOTICE:  Undefined property: Conveyor::$route in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 43
+2014-10-03 11:52:12 - PHP NOTICE:  Undefined offset: 0 in C:\i-net\htdocs\mymvc\system\library\simplyAutorization.php on line 44
+2014-10-03 11:52:13 - PHP NOTICE:  Undefined offset: 0 in C:\i-net\htdocs\mymvc\system\library\simplyAutorization.php on line 44
+2014-10-03 11:52:13 - PHP NOTICE:  Undefined offset: 0 in C:\i-net\htdocs\mymvc\system\library\simplyAutorization.php on line 44
+2014-10-03 11:54:05 - PHP NOTICE:  Undefined offset: 1 in C:\i-net\htdocs\mymvc\system\library\simplyAutorization.php on line 120
+2014-10-03 12:00:12 - PHP NOTICE:  Undefined offset: 1 in C:\i-net\htdocs\mymvc\system\library\simplyAutorization.php on line 122
+2014-10-03 12:00:12 - PHP NOTICE:  Undefined index:  in C:\i-net\htdocs\mymvc\system\library\simplyAutorization.php on line 122
+2014-10-03 12:00:13 - PHP NOTICE:  Undefined offset: 1 in C:\i-net\htdocs\mymvc\system\library\simplyAutorization.php on line 122
+2014-10-03 12:00:13 - PHP NOTICE:  Undefined index:  in C:\i-net\htdocs\mymvc\system\library\simplyAutorization.php on line 122
+2014-10-03 12:00:13 - PHP NOTICE:  Undefined offset: 1 in C:\i-net\htdocs\mymvc\system\library\simplyAutorization.php on line 122
+2014-10-03 12:00:13 - PHP NOTICE:  Undefined index:  in C:\i-net\htdocs\mymvc\system\library\simplyAutorization.php on line 122
+2014-10-03 12:00:14 - PHP NOTICE:  Undefined offset: 1 in C:\i-net\htdocs\mymvc\system\library\simplyAutorization.php on line 122
+2014-10-03 12:00:14 - PHP NOTICE:  Undefined index:  in C:\i-net\htdocs\mymvc\system\library\simplyAutorization.php on line 122
+2014-10-03 13:20:44 - PHP NOTICE:  Use of undefined constant ROUTE_ACTION - assumed 'ROUTE_ACTION' in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 38
+2014-10-03 13:20:44 - PHP NOTICE:  Use of undefined constant ROUTE_CONTROLLER - assumed 'ROUTE_CONTROLLER' in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 38
+2014-10-03 13:21:31 - PHP NOTICE:  Use of undefined constant ROUTE_ACTION - assumed 'ROUTE_ACTION' in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 17
+2014-10-03 13:21:31 - PHP NOTICE:  Use of undefined constant ROUTE_CONTROLLER - assumed 'ROUTE_CONTROLLER' in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 17
+2014-10-03 13:21:34 - PHP NOTICE:  Use of undefined constant ROUTE_ACTION - assumed 'ROUTE_ACTION' in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 38
+2014-10-03 13:21:34 - PHP NOTICE:  Use of undefined constant ROUTE_CONTROLLER - assumed 'ROUTE_CONTROLLER' in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 38
+2014-10-03 13:26:35 - PHP WARNING:  method_exists() expects exactly 2 parameters, 1 given in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 44
+2014-10-03 13:26:35 - PHP NOTICE:  Error: Could not find action Index in controller HomeController! in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 57
+2014-10-03 14:54:45 - PHP NOTICE:  Use of undefined constant ROUTE_ACTION - assumed 'ROUTE_ACTION' in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 38
+2014-10-03 14:54:45 - PHP NOTICE:  Use of undefined constant ROUTE_CONTROLLER - assumed 'ROUTE_CONTROLLER' in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 38
+2014-10-03 14:54:56 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 17
+2014-10-03 14:54:56 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 17
+2014-10-03 14:56:27 - PHP NOTICE:  Use of undefined constant ROUTE_ACTION - assumed 'ROUTE_ACTION' in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 39
+2014-10-03 14:56:27 - PHP NOTICE:  Use of undefined constant ROUTE_CONTROLLER - assumed 'ROUTE_CONTROLLER' in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 39
+2014-10-03 14:56:33 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 17
+2014-10-03 14:56:33 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 17
+2014-10-03 14:57:15 - PHP NOTICE:  Use of undefined constant ROUTE_ACTION - assumed 'ROUTE_ACTION' in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 39
+2014-10-03 14:57:15 - PHP NOTICE:  Use of undefined constant ROUTE_CONTROLLER - assumed 'ROUTE_CONTROLLER' in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 39
+2014-10-03 14:57:45 - PHP NOTICE:  Use of undefined constant ROUTE_ACTION - assumed 'ROUTE_ACTION' in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 38
+2014-10-03 14:57:45 - PHP NOTICE:  Use of undefined constant ROUTE_CONTROLLER - assumed 'ROUTE_CONTROLLER' in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 38
+2014-10-03 15:04:21 - PHP NOTICE:  Use of undefined constant ROUTE_ACTION - assumed 'ROUTE_ACTION' in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 38
+2014-10-03 15:04:21 - PHP NOTICE:  Use of undefined constant ROUTE_CONTROLLER - assumed 'ROUTE_CONTROLLER' in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 38
+2014-10-03 15:06:59 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\view.php on line 80
+2014-10-03 15:07:01 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\view.php on line 80
+2014-10-03 15:07:03 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\view.php on line 80
+2014-10-03 15:08:09 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\view.php on line 80
+2014-10-03 15:08:25 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\view.php on line 80
+2014-10-03 15:09:29 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\view.php on line 80
+2014-10-03 15:09:29 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\view.php on line 81
+2014-10-03 15:10:59 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\view.php on line 81
+2014-10-03 15:11:02 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\view.php on line 81
+2014-10-03 15:11:03 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\view.php on line 81
+2014-10-03 15:11:04 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\view.php on line 81
+2014-10-03 15:12:18 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\view.php on line 81
+2014-10-03 15:12:18 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\view.php on line 81
+2014-10-03 15:12:18 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\view.php on line 81
+2014-10-03 15:12:19 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\view.php on line 81
+2014-10-03 15:12:19 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\view.php on line 81
+2014-10-03 16:20:57 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\view.php on line 81
+2014-10-03 16:21:01 - PHP NOTICE:  Undefined index: Action in C:\i-net\htdocs\mymvc\system\engine\view.php on line 39
+2014-10-03 16:21:01 - PHP NOTICE:  Undefined index: ControllerName in C:\i-net\htdocs\mymvc\system\engine\view.php on line 43
+2014-10-03 16:21:01 - PHP NOTICE:  Undefined index: Action in C:\i-net\htdocs\mymvc\system\engine\view.php on line 39
+2014-10-03 16:21:01 - PHP NOTICE:  Undefined index: ControllerName in C:\i-net\htdocs\mymvc\system\engine\view.php on line 43
+2014-10-03 16:21:01 - PHP NOTICE:  Error: Could not load view views//.tpl! in C:\i-net\htdocs\mymvc\system\engine\view.php on line 70
+2014-10-03 16:22:15 - PHP NOTICE:  Undefined variable: view in C:\i-net\htdocs\mymvc\controllers\HomeController.php on line 8
+2014-10-03 16:23:15 - PHP NOTICE:  Undefined variable: view in C:\i-net\htdocs\mymvc\controllers\HomeController.php on line 8
+2014-10-03 16:23:50 - PHP NOTICE:  Use of undefined constant ROUTE_ACTION - assumed 'ROUTE_ACTION' in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 38
+2014-10-03 16:23:50 - PHP NOTICE:  Use of undefined constant ROUTE_CONTROLLER - assumed 'ROUTE_CONTROLLER' in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 38
+2014-10-03 16:26:25 - PHP NOTICE:  Error: Could not load view views//LoginForm.tpl! in C:\i-net\htdocs\mymvc\system\engine\view.php on line 70
+2014-10-03 16:26:44 - PHP NOTICE:  Error: Could not load view views//LoginForm.tpl! in C:\i-net\htdocs\mymvc\system\engine\view.php on line 70
+2014-10-03 16:27:06 - PHP NOTICE:  Error: Could not load view views//LoginForm.tpl! in C:\i-net\htdocs\mymvc\system\engine\view.php on line 70
+2014-10-03 17:20:23 - PHP NOTICE:  Error: Could not load view views//LoginForm.tpl! in C:\i-net\htdocs\mymvc\system\engine\view.php on line 70
+2014-10-03 17:21:50 - PHP NOTICE:  Undefined variable: view in C:\i-net\htdocs\mymvc\controllers\ErrorController.php on line 15
+2014-10-03 17:23:20 - PHP NOTICE:  Error: Could not load view views//LoginForm.tpl! in C:\i-net\htdocs\mymvc\system\engine\view.php on line 70
+2014-10-03 17:24:55 - PHP NOTICE:  Error: Could not load view views//LoginForm.tpl! in C:\i-net\htdocs\mymvc\system\engine\view.php on line 70
+2014-10-03 17:24:58 - PHP NOTICE:  Error: Could not load view views//LoginForm.tpl! in C:\i-net\htdocs\mymvc\system\engine\view.php on line 70
+2014-10-03 17:29:10 - PHP NOTICE:  Undefined variable: view in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 15
+2014-10-03 17:29:10 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 15
+2014-10-03 17:29:10 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 15
+2014-10-03 17:31:16 - PHP NOTICE:  Undefined variable: view in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 35
+2014-10-03 17:31:16 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 35
+2014-10-03 17:31:16 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 35
+2014-10-03 17:31:25 - PHP NOTICE:  Undefined variable: view in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 15
+2014-10-03 17:31:25 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 15
+2014-10-03 17:31:25 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 15
+2014-10-03 17:31:31 - PHP NOTICE:  Undefined variable: view in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 35
+2014-10-03 17:31:31 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 35
+2014-10-03 17:31:31 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 35
+2014-10-03 17:34:14 - PHP NOTICE:  Undefined variable: view in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 15
+2014-10-03 17:34:14 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 15
+2014-10-03 17:34:14 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 15
+2014-10-03 23:07:44 - PHP NOTICE:  Undefined offset: 0 in C:\i-net\htdocs\mymvc\system\library\router.php on line 12
+2014-10-03 23:07:44 - PHP NOTICE:  Error: Could not load Controller from controllers/! in C:\i-net\htdocs\mymvc\system\engine\loader.php on line 10
+2014-10-03 23:08:55 - PHP NOTICE:  Undefined variable: view in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 15
+2014-10-03 23:08:55 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 15
+2014-10-03 23:08:55 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 15
+2014-10-03 23:18:33 - PHP NOTICE:  Undefined index: schema in C:\i-net\htdocs\mymvc\system\library\router.php on line 53
+2014-10-03 23:22:03 - PHP NOTICE:  Undefined variable: view in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 35
+2014-10-03 23:22:03 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 35
+2014-10-03 23:22:03 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 35
+2014-10-03 23:45:22 - PHP NOTICE:  Undefined variable: view in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 15
+2014-10-03 23:45:22 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 15
+2014-10-03 23:45:22 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 15
+2014-10-03 23:46:12 - PHP NOTICE:  Undefined variable: view in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 35
+2014-10-03 23:46:12 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 35
+2014-10-03 23:46:12 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 35
+2014-10-03 23:47:12 - PHP NOTICE:  Undefined variable: view in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 15
+2014-10-03 23:47:12 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 15
+2014-10-03 23:47:12 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 15
+2014-10-03 23:47:27 - PHP NOTICE:  Undefined variable: view in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 35
+2014-10-03 23:47:27 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 35
+2014-10-03 23:47:27 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 35
+2014-10-03 23:47:38 - PHP NOTICE:  Undefined variable: view in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 15
+2014-10-03 23:47:38 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 15
+2014-10-03 23:47:38 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 15
+2014-10-03 23:56:32 - PHP NOTICE:  Undefined variable: view in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 35
+2014-10-03 23:56:32 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 35
+2014-10-03 23:56:32 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 35
+2014-10-03 23:56:41 - PHP NOTICE:  Undefined variable: view in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 15
+2014-10-03 23:56:41 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 15
+2014-10-03 23:56:41 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 15
+2014-10-03 23:56:46 - PHP NOTICE:  Undefined variable: view in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 35
+2014-10-03 23:56:46 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 35
+2014-10-03 23:56:46 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 35
+2014-10-03 23:57:40 - PHP NOTICE:  Undefined variable: view in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 15
+2014-10-03 23:57:40 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 15
+2014-10-03 23:57:40 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 15
+2014-10-04 0:02:04 - PHP NOTICE:  Undefined variable: view in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 35
+2014-10-04 0:02:04 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 35
+2014-10-04 0:02:04 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 35
+2014-10-09 10:01:28 - PHP NOTICE:  Undefined variable: view in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 15
+2014-10-09 10:01:28 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 15
+2014-10-09 10:01:28 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 15
+2014-10-09 11:24:12 - PHP NOTICE:  Indirect modification of overloaded property View::$links has no effect in C:\i-net\htdocs\mymvc\controllers\HomeController.php on line 10
+2014-10-09 11:24:12 - PHP NOTICE:  Indirect modification of overloaded property View::$links has no effect in C:\i-net\htdocs\mymvc\controllers\HomeController.php on line 11
+2014-10-09 11:29:26 - PHP NOTICE:  Indirect modification of overloaded property View::$links has no effect in C:\i-net\htdocs\mymvc\controllers\HomeController.php on line 10
+2014-10-09 11:29:26 - PHP NOTICE:  Indirect modification of overloaded property View::$links has no effect in C:\i-net\htdocs\mymvc\controllers\HomeController.php on line 11
+2014-10-09 11:30:11 - PHP NOTICE:  Indirect modification of overloaded property View::$links has no effect in C:\i-net\htdocs\mymvc\controllers\HomeController.php on line 11
+2014-10-09 11:30:11 - PHP NOTICE:  Indirect modification of overloaded property View::$links has no effect in C:\i-net\htdocs\mymvc\controllers\HomeController.php on line 12
+2014-10-09 11:30:12 - PHP NOTICE:  Indirect modification of overloaded property View::$links has no effect in C:\i-net\htdocs\mymvc\controllers\HomeController.php on line 11
+2014-10-09 11:30:12 - PHP NOTICE:  Indirect modification of overloaded property View::$links has no effect in C:\i-net\htdocs\mymvc\controllers\HomeController.php on line 12
+2014-10-09 11:30:12 - PHP NOTICE:  Indirect modification of overloaded property View::$links has no effect in C:\i-net\htdocs\mymvc\controllers\HomeController.php on line 11
+2014-10-09 11:30:12 - PHP NOTICE:  Indirect modification of overloaded property View::$links has no effect in C:\i-net\htdocs\mymvc\controllers\HomeController.php on line 12
+2014-10-09 11:38:48 - PHP NOTICE:  Undefined variable: view in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 35
+2014-10-09 11:38:48 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 35
+2014-10-09 11:38:48 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 35
+2014-10-09 11:38:55 - PHP NOTICE:  Undefined variable: view in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 15
+2014-10-09 11:38:55 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 15
+2014-10-09 11:38:55 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 15
+2014-10-12 13:25:24 - PHP NOTICE:  Undefined variable: come in C:\i-net\htdocs\mymvc\system\library\simplyAutorization.php on line 56
+2014-10-12 15:50:06 - PHP NOTICE:  Undefined index: query in C:\i-net\htdocs\mymvc\system\library\router.php on line 36
+2014-10-12 15:50:06 - PHP WARNING:  explode() expects at least 2 parameters, 1 given in C:\i-net\htdocs\mymvc\system\library\router.php on line 36
+2014-10-12 15:50:06 - PHP WARNING:  Invalid argument supplied for foreach() in C:\i-net\htdocs\mymvc\system\library\router.php on line 37
+2014-10-12 15:50:25 - PHP WARNING:  explode() expects at least 2 parameters, 1 given in C:\i-net\htdocs\mymvc\system\library\router.php on line 36
+2014-10-12 15:50:25 - PHP WARNING:  Invalid argument supplied for foreach() in C:\i-net\htdocs\mymvc\system\library\router.php on line 37
+2014-10-12 16:05:45 - PHP NOTICE:  Undefined variable: come in C:\i-net\htdocs\mymvc\system\library\simplyAutorization.php on line 56
+2014-10-12 18:25:17 - PHP NOTICE:  Undefined variable: come in C:\i-net\htdocs\mymvc\system\library\simplyAutorization.php on line 60
+2014-10-12 18:25:47 - PHP NOTICE:  Undefined variable: come in C:\i-net\htdocs\mymvc\system\library\simplyAutorization.php on line 60
+2014-11-18 12:35:08 - PHP WARNING:  Missing argument 3 for MUI::__construct(), called in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 18 and defined in C:\i-net\htdocs\mymvc\system\library\mui.php on line 4
+2014-11-18 12:35:08 - PHP WARNING:  Missing argument 4 for MUI::__construct(), called in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 18 and defined in C:\i-net\htdocs\mymvc\system\library\mui.php on line 4
+2014-11-18 12:35:08 - PHP WARNING:  Missing argument 5 for MUI::__construct(), called in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 18 and defined in C:\i-net\htdocs\mymvc\system\library\mui.php on line 4
+2014-11-18 15:17:01 - PHP NOTICE:  Undefined index: language in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 29
+2014-11-18 15:17:07 - PHP NOTICE:  Undefined index: language in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 29
+2014-11-18 15:17:07 - PHP NOTICE:  Undefined index: language in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 29
+2014-11-18 15:17:08 - PHP NOTICE:  Undefined index: language in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 29
+2014-11-18 15:17:08 - PHP NOTICE:  Undefined index: language in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 29
+2014-11-18 15:17:08 - PHP NOTICE:  Undefined index: language in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 29
+2014-11-18 15:17:08 - PHP NOTICE:  Undefined index: language in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 29
+2014-11-18 15:17:09 - PHP NOTICE:  Undefined index: language in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 29
+2014-11-18 15:18:02 - PHP NOTICE:  Array to string conversion in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 29
+2014-11-18 15:21:27 - PHP NOTICE:  Undefined index: language in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 30
+2014-11-27 0:04:59 - PHP NOTICE:  Error: Class not exist StoryController in controller StoryController! in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 67
+2014-11-27 0:50:53 - PHP NOTICE:  Undefined variable: array in C:\i-net\htdocs\mymvc\controllers\StoryController.php on line 8
+2014-11-27 0:50:53 - PHP WARNING:  array_merge(): Argument #2 is not an array in C:\i-net\htdocs\mymvc\controllers\StoryController.php on line 8
+2014-11-27 0:50:53 - PHP NOTICE:  Error: Could not load view views//.tpl! in C:\i-net\htdocs\mymvc\system\engine\view.php on line 70
+2014-11-27 14:08:23 - PHP NOTICE:  Undefined index: locale in C:\i-net\htdocs\mymvc\views\Story\Index.tpl on line 26
+2014-11-27 14:08:24 - PHP NOTICE:  Undefined index: locale in C:\i-net\htdocs\mymvc\views\Story\Index.tpl on line 26
+2014-11-27 14:15:37 - PHP NOTICE:  Array to string conversion in C:\i-net\htdocs\mymvc\views\Story\Index.tpl on line 27
+2014-11-27 15:38:47 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\StoryController.php on line 17
+2014-11-27 19:11:17 - PHP NOTICE:  Undefined variable: language in C:\i-net\htdocs\mymvc\views\Story\Index.tpl on line 26
+2014-11-27 19:11:17 - PHP NOTICE:  Undefined variable: language in C:\i-net\htdocs\mymvc\views\Story\Index.tpl on line 27
+2014-11-27 22:49:31 - PHP NOTICE:  Use of undefined constant text - assumed 'text' in C:\i-net\htdocs\mymvc\views\Story\Index.tpl on line 38
+2014-11-27 22:49:31 - PHP NOTICE:  Use of undefined constant text - assumed 'text' in C:\i-net\htdocs\mymvc\views\Story\Index.tpl on line 38
+2014-11-27 22:50:43 - PHP NOTICE:  Use of undefined constant text - assumed 'text' in C:\i-net\htdocs\mymvc\views\Story\Index.tpl on line 38
+2014-11-27 22:50:43 - PHP NOTICE:  Use of undefined constant text - assumed 'text' in C:\i-net\htdocs\mymvc\views\Story\Index.tpl on line 38
+2014-11-27 22:50:55 - PHP NOTICE:  Undefined variable: title_text in C:\i-net\htdocs\mymvc\views\Story\Index.tpl on line 38
+2014-11-27 22:50:55 - PHP NOTICE:  Undefined variable: title_text in C:\i-net\htdocs\mymvc\views\Story\Index.tpl on line 38
+2014-11-28 7:29:21 - PHP WARNING:  array_key_exists(): The first argument should be either a string or an integer in C:\i-net\htdocs\mymvc\system\library\mui.php on line 49
+2014-11-28 12:01:34 - PHP WARNING:  Missing argument 1 for Object::__construct(), called in C:\i-net\htdocs\mymvc\system\engine\joiner.php on line 18 and defined in C:\i-net\htdocs\mymvc\system\engine\object.php on line 5
+2014-11-28 12:01:34 - PHP NOTICE:  Undefined variable: storage in C:\i-net\htdocs\mymvc\system\engine\object.php on line 7
+2014-11-28 12:02:47 - PHP WARNING:  Missing argument 1 for Object::__construct(), called in C:\i-net\htdocs\mymvc\system\engine\joiner.php on line 18 and defined in C:\i-net\htdocs\mymvc\system\engine\object.php on line 5
+2014-11-28 12:02:47 - PHP NOTICE:  Undefined variable: storage in C:\i-net\htdocs\mymvc\system\engine\object.php on line 7
+2014-11-28 12:02:48 - PHP WARNING:  Missing argument 1 for Object::__construct(), called in C:\i-net\htdocs\mymvc\system\engine\joiner.php on line 18 and defined in C:\i-net\htdocs\mymvc\system\engine\object.php on line 5
+2014-11-28 12:02:48 - PHP NOTICE:  Undefined variable: storage in C:\i-net\htdocs\mymvc\system\engine\object.php on line 7
+2014-11-28 12:02:48 - PHP WARNING:  Missing argument 1 for Object::__construct(), called in C:\i-net\htdocs\mymvc\system\engine\joiner.php on line 18 and defined in C:\i-net\htdocs\mymvc\system\engine\object.php on line 5
+2014-11-28 12:02:48 - PHP NOTICE:  Undefined variable: storage in C:\i-net\htdocs\mymvc\system\engine\object.php on line 7
+2014-11-28 12:02:48 - PHP WARNING:  Missing argument 1 for Object::__construct(), called in C:\i-net\htdocs\mymvc\system\engine\joiner.php on line 18 and defined in C:\i-net\htdocs\mymvc\system\engine\object.php on line 5
+2014-11-28 12:02:48 - PHP NOTICE:  Undefined variable: storage in C:\i-net\htdocs\mymvc\system\engine\object.php on line 7
+2014-11-28 12:02:48 - PHP WARNING:  Missing argument 1 for Object::__construct(), called in C:\i-net\htdocs\mymvc\system\engine\joiner.php on line 18 and defined in C:\i-net\htdocs\mymvc\system\engine\object.php on line 5
+2014-11-28 12:02:48 - PHP NOTICE:  Undefined variable: storage in C:\i-net\htdocs\mymvc\system\engine\object.php on line 7
+2014-11-28 12:03:12 - PHP WARNING:  Missing argument 1 for Object::__construct(), called in C:\i-net\htdocs\mymvc\system\engine\joiner.php on line 18 and defined in C:\i-net\htdocs\mymvc\system\engine\object.php on line 5
+2014-11-28 12:03:12 - PHP NOTICE:  Undefined variable: storage in C:\i-net\htdocs\mymvc\system\engine\object.php on line 7
+2014-11-28 12:08:32 - PHP NOTICE:  Undefined variable: model in C:\i-net\htdocs\mymvc\system\engine\joiner.php on line 6
+2014-11-28 12:53:07 - PHP NOTICE:  Undefined variable: model in C:\i-net\htdocs\mymvc\system\engine\joiner.php on line 11
+2014-11-28 12:53:07 - PHP NOTICE:  Error: Class not exist  in request! in C:\i-net\htdocs\mymvc\system\engine\joiner.php on line 27
+2014-11-28 12:53:09 - PHP NOTICE:  Undefined variable: model in C:\i-net\htdocs\mymvc\system\engine\joiner.php on line 11
+2014-11-28 12:53:09 - PHP NOTICE:  Error: Class not exist  in request! in C:\i-net\htdocs\mymvc\system\engine\joiner.php on line 27
+2014-11-28 12:53:34 - PHP NOTICE:  Undefined variable: model in C:\i-net\htdocs\mymvc\system\engine\joiner.php on line 11
+2014-11-28 12:53:34 - PHP NOTICE:  Error: Class not exist  in request! in C:\i-net\htdocs\mymvc\system\engine\joiner.php on line 27
+2014-11-28 13:20:30 - PHP NOTICE:  Undefined variable: arg in C:\i-net\htdocs\mymvc\system\engine\joiner.php on line 27
+2014-11-28 13:20:30 - PHP NOTICE:  Undefined variable: arg in C:\i-net\htdocs\mymvc\system\engine\joiner.php on line 27
+2014-11-28 13:20:30 - PHP NOTICE:  Undefined variable: arg in C:\i-net\htdocs\mymvc\system\engine\joiner.php on line 27
+2014-11-28 14:11:01 - PHP NOTICE:  Undefined property: ReflectionClass::$newInstanceArgs in C:\i-net\htdocs\mymvc\system\engine\joiner.php on line 20
+2014-11-28 14:12:11 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 21
+2014-11-28 14:12:11 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 23
+2014-11-28 14:12:11 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 23
+2014-11-28 14:12:11 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 23
+2014-11-28 14:12:44 - PHP NOTICE:  Undefined property: ReflectionClass::$newInstanceArgs in C:\i-net\htdocs\mymvc\system\engine\joiner.php on line 20
+2014-11-28 14:14:07 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 21
+2014-11-28 14:14:07 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 23
+2014-11-28 14:14:07 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 23
+2014-11-28 14:14:07 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 23
+2014-11-28 14:20:06 - PHP WARNING:  Missing argument 1 for router::__construct() in C:\i-net\htdocs\mymvc\system\library\router.php on line 11
+2014-11-28 14:20:06 - PHP WARNING:  Missing argument 2 for router::__construct() in C:\i-net\htdocs\mymvc\system\library\router.php on line 11
+2014-11-28 14:20:06 - PHP NOTICE:  Undefined variable: db in C:\i-net\htdocs\mymvc\system\library\router.php on line 13
+2014-11-28 14:39:08 - PHP NOTICE:  Error: Could not load autorization from system/library/! in C:\i-net\htdocs\mymvc\system\engine\loader.php on line 10
+2014-11-28 15:08:46 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 21
+2014-11-28 15:08:46 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 23
+2014-11-28 15:08:46 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 23
+2014-11-28 15:08:46 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 23
+2014-11-28 15:08:46 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 23
+2014-11-28 15:08:46 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 27
+2014-11-28 15:08:46 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 33
+2014-11-28 15:08:46 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 34
+2014-11-28 15:08:46 - PHP NOTICE:  Error: Could not load Controller from controllers/! in C:\i-net\htdocs\mymvc\system\engine\loader.php on line 10
+2014-11-28 15:18:34 - PHP NOTICE:  Error: Could not load Story from controllers/! in C:\i-net\htdocs\mymvc\system\engine\loader.php on line 10
+2014-11-28 15:32:08 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 69
+2014-11-28 15:32:08 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 69
+2014-11-28 19:28:31 - PHP WARNING:  mysqli::mysqli():  in C:\i-net\htdocs\mymvc\system\database\mysqli.php on line 8
+2014-11-28 19:28:31 - PHP NOTICE:  Cannot connect to MySQL server: ����������� �� �����������, �.�. �������� ��������� ������ ������ �� �����������.
+ in C:\i-net\htdocs\mymvc\system\database\mysqli.php on line 10
+2014-11-28 19:28:31 - PHP WARNING:  mysqli::query(): Couldn't fetch mysqli in C:\i-net\htdocs\mymvc\system\database\mysqli.php on line 28
+2014-11-28 19:28:31 - PHP WARNING:  mysqli_x::query(): Couldn't fetch mysqli in C:\i-net\htdocs\mymvc\system\database\mysqli.php on line 29
+2014-11-28 19:28:31 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\library\mui.php on line 13
+2014-11-28 19:28:31 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\library\mui.php on line 41
+2014-11-28 19:28:31 - PHP NOTICE:  Undefined variable: value in C:\i-net\htdocs\mymvc\system\library\mui.php on line 49
+2014-11-28 19:28:31 - PHP NOTICE:  Undefined variable: languages in C:\i-net\htdocs\mymvc\system\library\mui.php on line 49
+2014-11-28 19:28:31 - PHP WARNING:  array_key_exists() expects parameter 2 to be array, null given in C:\i-net\htdocs\mymvc\system\library\mui.php on line 49
+2014-11-28 19:28:31 - PHP WARNING:  mysqli::query(): Couldn't fetch mysqli in C:\i-net\htdocs\mymvc\system\database\mysqli.php on line 28
+2014-11-28 19:28:31 - PHP WARNING:  mysqli_x::query(): Couldn't fetch mysqli in C:\i-net\htdocs\mymvc\system\database\mysqli.php on line 29
+2014-11-28 19:28:31 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\library\simplyAutorization.php on line 51
+2014-11-28 19:28:32 - PHP WARNING:  mysqli::query(): Couldn't fetch mysqli in C:\i-net\htdocs\mymvc\system\database\mysqli.php on line 28
+2014-11-28 19:28:32 - PHP WARNING:  mysqli_x::query(): Couldn't fetch mysqli in C:\i-net\htdocs\mymvc\system\database\mysqli.php on line 29
+2014-11-28 19:28:32 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\models\Story\Manipulation.php on line 15
+2014-11-28 19:28:32 - PHP WARNING:  Invalid argument supplied for foreach() in C:\i-net\htdocs\mymvc\models\Story\Manipulation.php on line 15
+2014-11-28 20:56:53 - PHP NOTICE:  Error: Could not load validations from system/library/! in C:\i-net\htdocs\mymvc\system\engine\loader.php on line 10
+2014-11-29 8:53:52 - PHP WARNING:  array_key_exists(): The first argument should be either a string or an integer in C:\i-net\htdocs\mymvc\system\library\mui.php on line 49
+2014-11-30 12:56:12 - PHP NOTICE:  Error: Could not load rules from app_start/! in C:\i-net\htdocs\mymvc\system\engine\loader.php on line 10
+2014-11-30 8:22:03 - PHP WARNING:  array_key_exists(): The first argument should be either a string or an integer in C:\i-net\htdocs\mymvc\system\library\mui.php on line 49
+2014-11-30 8:22:18 - PHP WARNING:  array_key_exists(): The first argument should be either a string or an integer in C:\i-net\htdocs\mymvc\system\library\mui.php on line 49
+2014-11-30 11:07:28 - PHP WARNING:  Missing argument 1 for Object::__construct() in C:\i-net\htdocs\mymvc\system\engine\object.php on line 5
+2014-11-30 11:13:20 - PHP WARNING:  Missing argument 1 for Object::__construct() in C:\i-net\htdocs\mymvc\system\engine\object.php on line 5
+2014-11-30 11:13:25 - PHP WARNING:  Missing argument 1 for Object::__construct() in C:\i-net\htdocs\mymvc\system\engine\object.php on line 5
+2014-11-30 11:13:29 - PHP WARNING:  Missing argument 1 for Object::__construct() in C:\i-net\htdocs\mymvc\system\engine\object.php on line 5
+2014-11-30 11:15:15 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-11-30 11:15:15 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-11-30 11:15:15 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-11-30 11:15:15 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-11-30 11:15:15 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-11-30 11:15:15 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 26
+2014-11-30 11:15:15 - PHP WARNING:  array_unshift() expects parameter 1 to be array, integer given in C:\i-net\htdocs\mymvc\system\engine\joiner.php on line 27
+2014-11-30 11:15:15 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 29
+2014-11-30 11:15:15 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 30
+2014-11-30 11:15:15 - PHP NOTICE:  Error: Could not load Controller from controllers/! in C:\i-net\htdocs\mymvc\system\engine\loader.php on line 10
+2014-11-30 11:15:32 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-11-30 11:15:32 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-11-30 11:15:32 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-11-30 11:15:32 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-11-30 11:15:32 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-11-30 11:15:32 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 26
+2014-11-30 11:15:32 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 29
+2014-11-30 11:15:32 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 30
+2014-11-30 11:15:32 - PHP NOTICE:  Error: Could not load Controller from controllers/! in C:\i-net\htdocs\mymvc\system\engine\loader.php on line 10
+2014-11-30 11:15:32 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-11-30 11:15:32 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-11-30 11:15:32 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-11-30 11:15:32 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-11-30 11:15:32 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-11-30 11:15:32 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 26
+2014-11-30 11:15:32 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 29
+2014-11-30 11:15:32 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 30
+2014-11-30 11:15:32 - PHP NOTICE:  Error: Could not load Controller from controllers/! in C:\i-net\htdocs\mymvc\system\engine\loader.php on line 10
+2014-11-30 11:15:52 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-11-30 11:15:52 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-11-30 11:15:52 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-11-30 11:15:52 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-11-30 11:15:52 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-11-30 11:15:52 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 26
+2014-11-30 11:15:52 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 29
+2014-11-30 11:15:52 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 30
+2014-11-30 11:15:52 - PHP NOTICE:  Error: Could not load Controller from controllers/! in C:\i-net\htdocs\mymvc\system\engine\loader.php on line 10
+2014-11-30 11:15:53 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-11-30 11:15:53 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-11-30 11:15:53 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-11-30 11:15:53 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-11-30 11:15:53 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-11-30 11:15:53 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 26
+2014-11-30 11:15:53 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 29
+2014-11-30 11:15:53 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 30
+2014-11-30 11:15:53 - PHP NOTICE:  Error: Could not load Controller from controllers/! in C:\i-net\htdocs\mymvc\system\engine\loader.php on line 10
+2014-11-30 18:49:35 - PHP NOTICE:  Undefined variable: data in C:\i-net\htdocs\mymvc\system\library\validation.php on line 72
+2014-11-30 22:47:34 - PHP NOTICE:  Indirect modification of overloaded property Conveyor::$storage has no effect in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 8
+2014-12-02 17:19:52 - PHP NOTICE:  Undefined variable: postdata in C:\i-net\htdocs\mymvc\system\library\validation.php on line 181
+2014-12-02 17:19:52 - PHP NOTICE:  Undefined variable: postdata in C:\i-net\htdocs\mymvc\system\library\validation.php on line 196
+2014-12-06 6:59:40 - PHP WARNING:  Missing argument 1 for Controller::__construct() in C:\i-net\htdocs\mymvc\system\engine\controller.php on line 5
+2014-12-06 7:01:39 - PHP NOTICE:  Undefined variable: action in C:\i-net\htdocs\mymvc\system\engine\controller.php on line 8
+2014-12-06 7:03:33 - PHP NOTICE:  Undefined variable: action in C:\i-net\htdocs\mymvc\system\engine\controller.php on line 8
+2014-12-06 7:03:33 - PHP WARNING:  Creating default object from empty value in C:\i-net\htdocs\mymvc\system\engine\controller.php on line 15
+2014-12-06 7:04:20 - PHP WARNING:  Creating default object from empty value in C:\i-net\htdocs\mymvc\system\engine\controller.php on line 15
+2014-12-06 7:06:59 - PHP WARNING:  Creating default object from empty value in C:\i-net\htdocs\mymvc\system\engine\controller.php on line 15
+2014-12-06 7:08:14 - PHP WARNING:  Creating default object from empty value in C:\i-net\htdocs\mymvc\system\engine\controller.php on line 20
+2014-12-06 7:19:19 - PHP WARNING:  Creating default object from empty value in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 80
+2014-12-06 7:20:26 - PHP WARNING:  Creating default object from empty value in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 80
+2014-12-06 7:21:27 - PHP WARNING:  Creating default object from empty value in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 82
+2014-12-06 7:21:28 - PHP WARNING:  Creating default object from empty value in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 82
+2014-12-06 7:27:14 - PHP WARNING:  Creating default object from empty value in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 80
+2014-12-06 7:27:47 - PHP WARNING:  Creating default object from empty value in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 80
+2014-12-06 7:27:50 - PHP WARNING:  Creating default object from empty value in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 80
+2014-12-06 7:28:43 - PHP WARNING:  Creating default object from empty value in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 81
+2014-12-06 7:28:45 - PHP WARNING:  Creating default object from empty value in C:\i-net\htdocs\mymvc\controllers\AccountController.php on line 81
+2014-12-06 10:52:55 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\library\validation.php on line 222
+2014-12-06 11:07:57 - PHP NOTICE:  Undefined index: postdata in C:\i-net\htdocs\mymvc\system\library\validation.php on line 143
+2014-12-06 11:10:23 - PHP NOTICE:  Undefined index: postdata in C:\i-net\htdocs\mymvc\system\library\validation.php on line 143
+2014-12-06 12:22:15 - PHP FATAL ERROR:  Не могу поделить на ноль in C:\i-net\htdocs\mymvc\system\library\validation.php on line 344
+2014-12-06 12:30:21 - PHP FATAL ERROR:  Не могу поделить на ноль in C:\i-net\htdocs\mymvc\system\library\validation.php on line 345
+2014-12-06 12:31:05 - PHP FATAL ERROR:  Не могу найти правило проверки:  in C:\i-net\htdocs\mymvc\system\library\validation.php on line 345
+2014-12-06 12:31:43 - PHP NOTICE:  Не могу найти правило проверки:  in C:\i-net\htdocs\mymvc\system\library\validation.php on line 345
+2014-12-06 12:32:16 - PHP NOTICE:  Не могу найти правило проверки: required in C:\i-net\htdocs\mymvc\system\library\validation.php on line 345
+2014-12-06 12:32:41 - PHP NOTICE:  Не могу найти правило проверки: required in C:\i-net\htdocs\mymvc\system\library\validation.php on line 345
+2014-12-06 12:33:26 - PHP NOTICE:  Не могу найти правило проверки: required in C:\i-net\htdocs\mymvc\system\library\validation.php on line 345
+2014-12-06 12:57:33 - PHP NOTICE:  Не могу найти правило проверки: required in C:\i-net\htdocs\mymvc\system\library\validation.php on line 345
+2014-12-06 13:43:56 - PHP NOTICE:  Undefined variable: rule in C:\i-net\htdocs\mymvc\system\library\validation.php on line 217
+2014-12-06 13:43:56 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\library\validation.php on line 227
+2014-12-06 13:44:26 - PHP NOTICE:  Undefined variable: rule in C:\i-net\htdocs\mymvc\system\library\validation.php on line 217
+2014-12-06 13:44:52 - PHP NOTICE:  Не могу найти правило проверки: required in C:\i-net\htdocs\mymvc\system\library\validation.php on line 346
+2014-12-06 13:47:33 - PHP NOTICE:  Не могу найти правило проверки: required in C:\i-net\htdocs\mymvc\system\library\validation.php on line 346
+2014-12-06 14:03:24 - PHP NOTICE:  Не могу найти правило проверки: required in C:\i-net\htdocs\mymvc\system\library\validation.php on line 350
+2014-12-06 14:16:10 - PHP NOTICE:  Не могу найти правило проверки: required in C:\i-net\htdocs\mymvc\system\library\validation.php on line 350
+2014-12-06 14:27:41 - PHP NOTICE:  Undefined variable: postdata in C:\i-net\htdocs\mymvc\system\library\validation.php on line 357
+2014-12-06 14:27:41 - PHP NOTICE:  Undefined variable: row in C:\i-net\htdocs\mymvc\system\library\validation.php on line 365
+2014-12-06 14:27:41 - PHP NOTICE:  Undefined variable: postdata in C:\i-net\htdocs\mymvc\system\library\validation.php on line 365
+2014-12-06 14:27:41 - PHP NOTICE:  Indirect modification of overloaded property validation::$_field_data has no effect in C:\i-net\htdocs\mymvc\system\library\validation.php on line 365
+2014-12-06 14:27:41 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\library\validation.php on line 374
+2014-12-06 14:31:52 - PHP NOTICE:  Undefined index: field in C:\i-net\htdocs\mymvc\system\library\validation.php on line 365
+2014-12-16 14:13:43 - PHP WARNING:  mysqli::mysqli():  in C:\i-net\htdocs\mymvc\system\database\mysqli.php on line 8
+2014-12-16 14:13:43 - PHP NOTICE:  Cannot connect to MySQL server: ����������� �� �����������, �.�. �������� ��������� ������ ������ �� �����������.
+ in C:\i-net\htdocs\mymvc\system\database\mysqli.php on line 10
+2014-12-16 14:13:43 - PHP WARNING:  mysqli::query(): Couldn't fetch mysqli in C:\i-net\htdocs\mymvc\system\database\mysqli.php on line 28
+2014-12-16 14:13:43 - PHP WARNING:  mysqli_x::query(): Couldn't fetch mysqli in C:\i-net\htdocs\mymvc\system\database\mysqli.php on line 29
+2014-12-16 14:13:43 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\library\mui.php on line 13
+2014-12-16 14:13:43 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\library\mui.php on line 42
+2014-12-16 14:13:43 - PHP WARNING:  mysqli::query(): Couldn't fetch mysqli in C:\i-net\htdocs\mymvc\system\database\mysqli.php on line 28
+2014-12-16 14:13:43 - PHP WARNING:  mysqli_x::query(): Couldn't fetch mysqli in C:\i-net\htdocs\mymvc\system\database\mysqli.php on line 29
+2014-12-16 14:13:43 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\library\simplyAutorization.php on line 51
+2014-12-16 14:13:43 - PHP WARNING:  mysqli::query(): Couldn't fetch mysqli in C:\i-net\htdocs\mymvc\system\database\mysqli.php on line 28
+2014-12-16 14:13:43 - PHP WARNING:  mysqli_x::query(): Couldn't fetch mysqli in C:\i-net\htdocs\mymvc\system\database\mysqli.php on line 29
+2014-12-16 14:13:43 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\models\Domain.php on line 7
+2014-12-16 14:13:43 - PHP WARNING:  mysqli::query(): Couldn't fetch mysqli in C:\i-net\htdocs\mymvc\system\database\mysqli.php on line 28
+2014-12-16 14:13:43 - PHP WARNING:  mysqli_x::query(): Couldn't fetch mysqli in C:\i-net\htdocs\mymvc\system\database\mysqli.php on line 29
+2014-12-16 14:13:43 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\models\Domain.php on line 21
+2014-12-16 14:13:43 - PHP WARNING:  Invalid argument supplied for foreach() in C:\i-net\htdocs\mymvc\models\Domain.php on line 21
+2014-12-18 23:17:44 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:17:44 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:17:44 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:17:44 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:17:44 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:18:19 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:18:19 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:18:19 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:18:19 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:18:19 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:18:20 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:18:20 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:18:20 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:18:20 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:18:20 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:18:20 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:18:20 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:18:20 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:18:20 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:18:20 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:18:20 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:18:20 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:18:20 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:18:20 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:18:20 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:18:20 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:18:20 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:18:20 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:18:20 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:18:20 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:18:21 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:18:21 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:18:21 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:18:21 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:18:21 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:18:21 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:18:21 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:18:21 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:18:21 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:18:21 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:23:03 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:23:03 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:23:03 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:23:03 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:23:03 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:23:06 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:23:06 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:23:06 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:23:06 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:23:06 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:24:28 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:24:28 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:24:28 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:24:28 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:24:28 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:24:29 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:24:29 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:24:29 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:24:29 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:24:29 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:24:30 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:24:30 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:24:30 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:24:30 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:24:30 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:27:37 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:27:37 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:27:37 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:27:37 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:27:37 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:27:40 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:27:40 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:27:40 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:27:40 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:27:40 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:27:41 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:27:41 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:27:41 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:27:41 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:27:41 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:27:41 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:27:41 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:27:41 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:27:41 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:27:41 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:27:42 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:27:42 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:27:42 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:27:42 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:27:42 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:16 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:28:16 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:16 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:16 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:16 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:16 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:28:16 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:16 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:16 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:16 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:17 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:28:17 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:17 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:17 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:17 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:17 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:28:17 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:17 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:17 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:17 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:17 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:28:17 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:17 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:17 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:17 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:33 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:28:33 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:33 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:33 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:33 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:34 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:28:34 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:34 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:34 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:34 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:34 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:28:34 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:34 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:34 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:34 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:35 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:28:35 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:35 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:35 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:35 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:35 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:28:35 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:35 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:35 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:35 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:35 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:28:35 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:35 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:35 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:35 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:35 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:28:35 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:35 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:35 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:28:35 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:29:04 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:29:04 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:29:04 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:29:04 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:29:04 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:29:08 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:29:08 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:29:08 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:29:08 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:29:08 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:29:59 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:29:59 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:29:59 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:29:59 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:29:59 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:30:00 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:30:00 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:30:00 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:30:00 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:30:00 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:30:00 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:30:00 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:30:00 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:30:00 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:30:00 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:30:50 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:30:50 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:30:50 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:30:50 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:30:50 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:31:51 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:31:51 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:31:51 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:31:51 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:31:51 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:31:51 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:31:51 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:31:51 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:31:51 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:31:51 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:33:01 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:33:01 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:33:01 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:33:01 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:33:01 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:34:05 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:34:05 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:34:05 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:34:05 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:34:05 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:34:06 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:34:06 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:34:06 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:34:06 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:34:06 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:34:06 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:34:06 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:34:06 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:34:06 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:34:06 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:37:50 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:37:50 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:37:50 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:37:50 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:37:50 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:37:50 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:37:51 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:37:51 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:37:51 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:37:51 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:37:51 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:37:51 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:37:51 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:37:51 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:37:51 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:37:51 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:37:51 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:37:51 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:37:51 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:37:51 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:40:41 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:40:41 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:40:41 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:40:41 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:40:41 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:40:42 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:40:42 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:40:42 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:40:42 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:40:42 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:40:42 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:40:42 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:40:42 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:40:42 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:40:42 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:40:42 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:40:42 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:40:42 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:40:42 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:40:42 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:47 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:43:47 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:47 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:47 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:47 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:47 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:43:47 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:47 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:47 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:47 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:48 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:43:48 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:48 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:48 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:48 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:48 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:43:48 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:48 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:48 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:48 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:48 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:43:48 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:48 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:48 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:48 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:48 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:43:48 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:48 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:48 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:48 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:48 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:43:48 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:48 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:48 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:48 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:48 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:43:48 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:48 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:48 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:48 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:49 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:43:49 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:49 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:49 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:49 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:49 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:43:49 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:49 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:49 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:49 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:49 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:43:49 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:49 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:49 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:49 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:49 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:43:49 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:49 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:49 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:49 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:49 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:43:49 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:49 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:49 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:49 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:50 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:43:50 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:50 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:50 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:50 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:50 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:43:50 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:50 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:50 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:50 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:50 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:43:50 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:50 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:50 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:43:50 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:45:15 - PHP NOTICE:  Error: Could not load simply_autorization from system/library/! in C:\i-net\htdocs\mymvc\system\engine\loader.php on line 13
+2014-12-18 23:45:24 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 20
+2014-12-18 23:45:24 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:45:24 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:45:24 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:45:24 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\engine\conveyor.php on line 22
+2014-12-18 23:46:22 - PHP NOTICE:  Error: Could not load simply_autorization from system/library/! in C:\i-net\htdocs\mymvc\system\engine\loader.php on line 13
+2014-12-18 23:53:39 - PHP NOTICE:  Error: Could not load simply_autorization from system/library/! in C:\i-net\htdocs\mymvc\system\engine\loader.php on line 13
+2014-12-18 23:56:34 - PHP NOTICE:  Error: Class not exist Simplyautorization in simplyautorization! in C:\i-net\htdocs\mymvc\system\engine\joiner.php on line 53
+2014-12-20 14:57:10 - PHP NOTICE:  Undefined variable: list_path in C:\i-net\htdocs\mymvc\system\engine\loader.php on line 20
+2014-12-20 14:57:10 - PHP WARNING:  Invalid argument supplied for foreach() in C:\i-net\htdocs\mymvc\system\engine\loader.php on line 20
+2014-12-20 14:59:22 - PHP NOTICE:  Undefined variable: class in C:\i-net\htdocs\mymvc\system\startup.php on line 112
+2014-12-20 14:59:22 - PHP WARNING:  require_once(system/engine//.php): failed to open stream: No such file or directory in C:\i-net\htdocs\mymvc\system\engine\loader.php on line 24
+2014-12-20 14:59:23 - PHP NOTICE:  Undefined variable: class in C:\i-net\htdocs\mymvc\system\startup.php on line 112
+2014-12-20 14:59:23 - PHP WARNING:  require_once(system/engine//.php): failed to open stream: No such file or directory in C:\i-net\htdocs\mymvc\system\engine\loader.php on line 24
+2014-12-20 14:59:23 - PHP NOTICE:  Undefined variable: class in C:\i-net\htdocs\mymvc\system\startup.php on line 112
+2014-12-20 14:59:23 - PHP WARNING:  require_once(system/engine//.php): failed to open stream: No such file or directory in C:\i-net\htdocs\mymvc\system\engine\loader.php on line 24
+2014-12-20 14:59:23 - PHP NOTICE:  Undefined variable: class in C:\i-net\htdocs\mymvc\system\startup.php on line 112
+2014-12-20 14:59:23 - PHP WARNING:  require_once(system/engine//.php): failed to open stream: No such file or directory in C:\i-net\htdocs\mymvc\system\engine\loader.php on line 24
+2014-12-20 14:59:50 - PHP WARNING:  require_once(system/engine//bundles.php): failed to open stream: No such file or directory in C:\i-net\htdocs\mymvc\system\engine\loader.php on line 24
+2014-12-20 14:59:51 - PHP WARNING:  require_once(system/engine//bundles.php): failed to open stream: No such file or directory in C:\i-net\htdocs\mymvc\system\engine\loader.php on line 24
+2014-12-20 15:04:33 - PHP WARNING:  require_once(system/engine//bundles.php): failed to open stream: No such file or directory in C:\i-net\htdocs\mymvc\system\engine\loader.php on line 24
+2014-12-20 15:04:34 - PHP WARNING:  require_once(system/engine//bundles.php): failed to open stream: No such file or directory in C:\i-net\htdocs\mymvc\system\engine\loader.php on line 24
+2014-12-20 15:04:35 - PHP WARNING:  require_once(system/engine//bundles.php): failed to open stream: No such file or directory in C:\i-net\htdocs\mymvc\system\engine\loader.php on line 24
+2014-12-20 15:07:53 - PHP NOTICE:  Undefined variable: name in C:\i-net\htdocs\mymvc\system\startup.php on line 115
+2014-12-20 15:07:53 - PHP NOTICE:  Undefined variable: dir in C:\i-net\htdocs\mymvc\system\startup.php on line 115
+2014-12-20 15:07:53 - PHP NOTICE:  Error: Could not load  from ! in C:\i-net\htdocs\mymvc\system\startup.php on line 115
+2014-12-21 0:27:49 - PHP NOTICE:  Error: Class not exist Story/ManipulationModel in Story/Manipulation! in C:\i-net\htdocs\mymvc\system\engine\joiner.php on line 53
+2014-12-21 0:28:04 - PHP NOTICE:  Error: Class not exist Story/ManipulationModel in Story/Manipulation! in C:\i-net\htdocs\mymvc\system\engine\joiner.php on line 53
+2014-12-21 0:31:26 - PHP NOTICE:  Error: Class not exist Story_ManipulationModel in Story/Manipulation! in C:\i-net\htdocs\mymvc\system\engine\joiner.php on line 53
+2014-12-21 0:32:09 - PHP NOTICE:  Error: Class not exist Story_Manipulation_model in Story/Manipulation! in C:\i-net\htdocs\mymvc\system\engine\joiner.php on line 53
+2014-12-21 0:32:10 - PHP NOTICE:  Error: Class not exist Story_Manipulation_model in Story/Manipulation! in C:\i-net\htdocs\mymvc\system\engine\joiner.php on line 53
+2014-12-21 0:34:04 - PHP NOTICE:  Error: Class not exist Domain_model in Domain! in C:\i-net\htdocs\mymvc\system\engine\joiner.php on line 57
+2014-12-21 0:41:41 - PHP NOTICE:  Undefined index: is_array in C:\i-net\htdocs\mymvc\system\library\validation.php on line 168
+2014-12-21 4:45:32 - PHP NOTICE:  Array to string conversion in C:\i-net\htdocs\mymvc\controllers\StoryController.php on line 12
+2014-12-21 5:04:39 - PHP NOTICE:  Undefined variable: row in C:\i-net\htdocs\mymvc\system\library\validation.php on line 181
+2014-12-21 5:56:20 - PHP NOTICE:  Array to string conversion in C:\i-net\htdocs\mymvc\system\library\validation.php on line 182
+2014-12-21 6:12:59 - PHP NOTICE:  Trying to get property of non-object in C:\i-net\htdocs\mymvc\system\library\validation.php on line 425
+2014-12-21 6:33:17 - PHP NOTICE:  Undefined variable: postdata in C:\i-net\htdocs\mymvc\system\library\validation.php on line 388
+2014-12-21 6:33:17 - PHP NOTICE:  Undefined variable: row in C:\i-net\htdocs\mymvc\system\library\validation.php on line 396
+2014-12-21 6:33:17 - PHP NOTICE:  Indirect modification of overloaded property validation::$_field_data has no effect in C:\i-net\htdocs\mymvc\system\library\validation.php on line 396
+2014-12-21 6:33:17 - PHP NOTICE:  Undefined variable: postdata in C:\i-net\htdocs\mymvc\system\library\validation.php on line 388
+2014-12-21 6:33:17 - PHP NOTICE:  Undefined variable: row in C:\i-net\htdocs\mymvc\system\library\validation.php on line 396
+2014-12-21 6:33:17 - PHP NOTICE:  Indirect modification of overloaded property validation::$_field_data has no effect in C:\i-net\htdocs\mymvc\system\library\validation.php on line 396
+2014-12-23 16:45:01 - PHP NOTICE:  Error: Could not load view views/Payment/Index.tpl! in C:\i-net\htdocs\payment\system\engine\view.php on line 70
+2014-12-23 16:49:27 - PHP NOTICE:  Error: Could not load view views/Payment/Index.tpl! in C:\i-net\htdocs\payment\system\engine\view.php on line 70
+2014-12-23 16:49:29 - PHP NOTICE:  Error: Could not load view views/Payment/Index.tpl! in C:\i-net\htdocs\payment\system\engine\view.php on line 70
+2014-12-23 16:49:29 - PHP NOTICE:  Error: Could not load view views/Payment/Index.tpl! in C:\i-net\htdocs\payment\system\engine\view.php on line 70
+2014-12-23 16:49:29 - PHP NOTICE:  Error: Could not load view views/Payment/Index.tpl! in C:\i-net\htdocs\payment\system\engine\view.php on line 70
+2014-12-23 16:49:30 - PHP NOTICE:  Error: Could not load view views/Payment/Index.tpl! in C:\i-net\htdocs\payment\system\engine\view.php on line 70
+2014-12-23 16:49:30 - PHP NOTICE:  Error: Could not load view views/Payment/Index.tpl! in C:\i-net\htdocs\payment\system\engine\view.php on line 70
+2014-12-23 16:49:30 - PHP NOTICE:  Error: Could not load view views/Payment/Index.tpl! in C:\i-net\htdocs\payment\system\engine\view.php on line 70
+2014-12-23 16:49:30 - PHP NOTICE:  Error: Could not load view views/Payment/Index.tpl! in C:\i-net\htdocs\payment\system\engine\view.php on line 70
+2014-12-24 16:44:32 - PHP NOTICE:   Could not load language Payment/main from lang/en_EN/Payment/main.php! in C:\i-net\htdocs\payment\system\library\mui.php on line 69
+2014-12-24 16:45:44 - PHP NOTICE:   Could not load language Payment/main from lang/en_EN/Payment/main.php! in C:\i-net\htdocs\payment\system\library\mui.php on line 69
+2014-12-24 18:43:36 - PHP NOTICE:  Undefined variable: view in C:\i-net\htdocs\payment\models\Domain.php on line 39
+2014-12-24 18:45:47 - PHP NOTICE:  Undefined variable: data in C:\i-net\htdocs\payment\models\Domain.php on line 11
+2014-12-24 18:48:22 - PHP NOTICE:  Undefined index: Action in C:\i-net\htdocs\payment\system\engine\view.php on line 39
+2014-12-24 18:48:22 - PHP NOTICE:  Undefined index: ControllerName in C:\i-net\htdocs\payment\system\engine\view.php on line 43
+2014-12-24 18:48:22 - PHP NOTICE:  Undefined index: Action in C:\i-net\htdocs\payment\system\engine\view.php on line 39
+2014-12-24 18:48:22 - PHP NOTICE:  Undefined index: ControllerName in C:\i-net\htdocs\payment\system\engine\view.php on line 43
+2014-12-24 18:48:22 - PHP NOTICE:  Error: Could not load view views//.tpl! in C:\i-net\htdocs\payment\system\engine\view.php on line 70
+2014-12-24 18:56:41 - PHP NOTICE:  Undefined index: pogout in C:\i-net\htdocs\payment\views\Shared\LoginPartial.tpl on line 3
+2014-12-24 19:42:49 - PHP NOTICE:  Error: Could not load Domain from models/! in C:\i-net\htdocs\payment\system\engine\loader.php on line 13
+2014-12-24 19:42:50 - PHP NOTICE:  Error: Could not load Domain from models/! in C:\i-net\htdocs\payment\system\engine\loader.php on line 13
+2014-12-24 19:46:10 - PHP NOTICE:  Error: Could not load Domain from models/! in C:\i-net\htdocs\payment\system\engine\loader.php on line 13
+2014-12-24 20:08:20 - PHP NOTICE:  Error: Class not exist Account_UserProfile_model in Account/UserProfile! in C:\i-net\htdocs\payment\system\engine\joiner.php on line 57
+2014-12-24 21:34:10 - PHP NOTICE:  Undefined variable: db in C:\i-net\htdocs\payment\system\library\mui.php on line 89
+2014-12-26 9:40:53 - PHP NOTICE:  Undefined index: Action in C:\i-net\htdocs\payment\system\engine\view.php on line 59
+2014-12-26 9:40:53 - PHP NOTICE:  Undefined index: Action in C:\i-net\htdocs\payment\system\engine\view.php on line 59
+2014-12-26 9:40:53 - PHP NOTICE:  Error: Could not load view views/Payment/.tpl! in C:\i-net\htdocs\payment\system\engine\view.php on line 90
+2014-12-26 9:41:24 - PHP NOTICE:  Undefined index: Action in C:\i-net\htdocs\payment\system\engine\view.php on line 59
+2014-12-26 9:41:24 - PHP NOTICE:  Undefined index: Action in C:\i-net\htdocs\payment\system\engine\view.php on line 59
+2014-12-26 9:41:24 - PHP NOTICE:  Error: Could not load view views/Payment/.tpl! in C:\i-net\htdocs\payment\system\engine\view.php on line 90
+2014-12-26 9:41:25 - PHP NOTICE:  Undefined index: Action in C:\i-net\htdocs\payment\system\engine\view.php on line 59
+2014-12-26 9:41:25 - PHP NOTICE:  Undefined index: Action in C:\i-net\htdocs\payment\system\engine\view.php on line 59
+2014-12-26 9:41:25 - PHP NOTICE:  Error: Could not load view views/Payment/.tpl! in C:\i-net\htdocs\payment\system\engine\view.php on line 90
+2014-12-26 11:08:26 - PHP WARNING:  Missing argument 1 for Payment_Main_model::validate_post_data(), called in C:\i-net\htdocs\payment\controllers\PaymentController.php on line 10 and defined in C:\i-net\htdocs\payment\models\Payment\Main.php on line 29
+2014-12-26 11:52:29 - PHP NOTICE:  Undefined offset: 3 in C:\i-net\htdocs\payment\controllers\PaymentController.php on line 13
+2014-12-26 11:58:12 - PHP NOTICE:  Array to string conversion in C:\i-net\htdocs\payment\views\Payment\Index.tpl on line 226
+2014-12-26 11:58:13 - PHP NOTICE:  Array to string conversion in C:\i-net\htdocs\payment\views\Payment\Index.tpl on line 226
+2014-12-26 11:58:13 - PHP NOTICE:  Array to string conversion in C:\i-net\htdocs\payment\views\Payment\Index.tpl on line 226
+2014-12-26 11:58:14 - PHP NOTICE:  Array to string conversion in C:\i-net\htdocs\payment\views\Payment\Index.tpl on line 226
+2014-12-26 11:58:15 - PHP NOTICE:  Array to string conversion in C:\i-net\htdocs\payment\views\Payment\Index.tpl on line 226
+2014-12-26 11:58:16 - PHP NOTICE:  Array to string conversion in C:\i-net\htdocs\payment\views\Payment\Index.tpl on line 226
+2014-12-26 11:58:17 - PHP NOTICE:  Array to string conversion in C:\i-net\htdocs\payment\views\Payment\Index.tpl on line 226
+2014-12-26 11:58:18 - PHP NOTICE:  Array to string conversion in C:\i-net\htdocs\payment\views\Payment\Index.tpl on line 226
+2014-12-26 12:32:38 - PHP NOTICE:  Undefined variable: errors in C:\i-net\htdocs\payment\models\Payment\Main.php on line 36
+2014-12-26 12:32:49 - PHP NOTICE:  Undefined offset: 2 in C:\i-net\htdocs\payment\controllers\PaymentController.php on line 13
+2014-12-26 15:45:44 - PHP NOTICE:  Undefined index: ss-exc in C:\i-net\htdocs\payment\models\Payment\Main.php on line 33
+2014-12-26 15:46:02 - PHP NOTICE:  Error: could not find the function in rules list trye! in C:\i-net\htdocs\payment\system\library\validation.php on line 95
+2014-12-26 15:47:09 - PHP NOTICE:  Error: could not find the function - trye() in rules list! in C:\i-net\htdocs\payment\system\library\validation.php on line 95
+2014-12-26 15:47:30 - PHP NOTICE:  Error: could not find the function - trye() assigned in rules list! in C:\i-net\htdocs\payment\system\library\validation.php on line 95
+2014-12-26 15:51:02 - PHP NOTICE:  Error: could not find the function - requred() assigned in rules list! in C:\i-net\htdocs\payment\system\library\validation.php on line 95
+2014-12-26 15:57:10 - PHP WARNING:  Missing argument 2 for Validation::min_length(), called in C:\i-net\htdocs\payment\system\library\validation.php on line 100 and defined in C:\i-net\htdocs\payment\system\library\validation.php on line 174
+2014-12-26 15:57:10 - PHP NOTICE:  Undefined variable: val in C:\i-net\htdocs\payment\system\library\validation.php on line 176
+2014-12-26 15:57:10 - PHP NOTICE:  Undefined variable: val in C:\i-net\htdocs\payment\system\library\validation.php on line 186
+2014-12-26 16:00:22 - PHP NOTICE:  Error: could not find the function -  max_length() assigned in rules list! in C:\i-net\htdocs\payment\system\library\validation.php on line 95
+2014-12-26 16:48:30 - PHP NOTICE:  Error: could not find the function - () assigned in rules list! in C:\i-net\htdocs\payment\system\library\validation.php on line 98
+2014-12-26 18:40:58 - PHP WARNING:  preg_match(): Delimiter must not be alphanumeric or backslash in C:\i-net\htdocs\payment\system\library\validation.php on line 144
+2014-12-26 18:40:58 - PHP WARNING:  preg_match(): Delimiter must not be alphanumeric or backslash in C:\i-net\htdocs\payment\system\library\validation.php on line 144
+2014-12-26 18:40:58 - PHP WARNING:  preg_match(): Delimiter must not be alphanumeric or backslash in C:\i-net\htdocs\payment\system\library\validation.php on line 144
+2014-12-26 18:40:58 - PHP WARNING:  preg_match(): Delimiter must not be alphanumeric or backslash in C:\i-net\htdocs\payment\system\library\validation.php on line 144
+2014-12-26 18:40:58 - PHP WARNING:  preg_match(): Delimiter must not be alphanumeric or backslash in C:\i-net\htdocs\payment\system\library\validation.php on line 144
+2014-12-26 18:40:58 - PHP WARNING:  preg_match(): Delimiter must not be alphanumeric or backslash in C:\i-net\htdocs\payment\system\library\validation.php on line 144
+2014-12-26 18:40:58 - PHP WARNING:  preg_match(): Delimiter must not be alphanumeric or backslash in C:\i-net\htdocs\payment\system\library\validation.php on line 144
+2014-12-26 18:40:58 - PHP WARNING:  preg_match(): Delimiter must not be alphanumeric or backslash in C:\i-net\htdocs\payment\system\library\validation.php on line 144
+2014-12-26 18:40:58 - PHP WARNING:  preg_match(): Delimiter must not be alphanumeric or backslash in C:\i-net\htdocs\payment\system\library\validation.php on line 144
+2014-12-26 18:40:58 - PHP WARNING:  preg_match(): Delimiter must not be alphanumeric or backslash in C:\i-net\htdocs\payment\system\library\validation.php on line 144
+2014-12-26 18:40:58 - PHP WARNING:  preg_match(): Delimiter must not be alphanumeric or backslash in C:\i-net\htdocs\payment\system\library\validation.php on line 144
+2014-12-26 18:46:27 - PHP NOTICE:  Undefined variable: sum in C:\i-net\htdocs\payment\system\library\validation.php on line 608
+2014-12-26 20:07:15 - PHP NOTICE:  Use of undefined constant i - assumed 'i' in C:\i-net\htdocs\payment\system\library\validation.php on line 607
+2014-12-26 20:07:15 - PHP NOTICE:  Use of undefined constant i - assumed 'i' in C:\i-net\htdocs\payment\system\library\validation.php on line 607
+2014-12-26 20:07:15 - PHP NOTICE:  Use of undefined constant i - assumed 'i' in C:\i-net\htdocs\payment\system\library\validation.php on line 607
+2014-12-26 20:07:15 - PHP NOTICE:  Use of undefined constant i - assumed 'i' in C:\i-net\htdocs\payment\system\library\validation.php on line 607
+2014-12-26 20:07:15 - PHP NOTICE:  Use of undefined constant i - assumed 'i' in C:\i-net\htdocs\payment\system\library\validation.php on line 607
+2014-12-26 20:07:15 - PHP NOTICE:  Use of undefined constant i - assumed 'i' in C:\i-net\htdocs\payment\system\library\validation.php on line 607
+2014-12-26 20:07:15 - PHP NOTICE:  Use of undefined constant i - assumed 'i' in C:\i-net\htdocs\payment\system\library\validation.php on line 607
+2014-12-26 20:07:15 - PHP NOTICE:  Use of undefined constant i - assumed 'i' in C:\i-net\htdocs\payment\system\library\validation.php on line 607
+2014-12-26 20:07:15 - PHP NOTICE:  Use of undefined constant i - assumed 'i' in C:\i-net\htdocs\payment\system\library\validation.php on line 607
+2014-12-26 20:07:15 - PHP NOTICE:  Use of undefined constant i - assumed 'i' in C:\i-net\htdocs\payment\system\library\validation.php on line 607
+2014-12-26 20:07:15 - PHP NOTICE:  Use of undefined constant i - assumed 'i' in C:\i-net\htdocs\payment\system\library\validation.php on line 607
+2014-12-26 20:07:15 - PHP NOTICE:  Use of undefined constant i - assumed 'i' in C:\i-net\htdocs\payment\system\library\validation.php on line 607
+2014-12-26 20:07:15 - PHP NOTICE:  Use of undefined constant i - assumed 'i' in C:\i-net\htdocs\payment\system\library\validation.php on line 607
+2014-12-26 20:07:15 - PHP NOTICE:  Use of undefined constant i - assumed 'i' in C:\i-net\htdocs\payment\system\library\validation.php on line 607
+2014-12-26 20:07:15 - PHP NOTICE:  Use of undefined constant i - assumed 'i' in C:\i-net\htdocs\payment\system\library\validation.php on line 607
+2014-12-26 20:07:15 - PHP NOTICE:  Use of undefined constant i - assumed 'i' in C:\i-net\htdocs\payment\system\library\validation.php on line 607
+2014-12-26 20:28:47 - PHP WARNING:  in_array() expects parameter 2 to be array, integer given in C:\i-net\htdocs\payment\system\library\validation.php on line 545
+2014-12-26 22:12:32 - PHP NOTICE:  Undefined property: Validation::$db in C:\i-net\htdocs\payment\system\library\validation.php on line 627
+2014-12-26 22:19:14 - PHP NOTICE:  Error: could not find the function - card_numbers() assigned in rules list! in C:\i-net\htdocs\payment\system\library\validation.php on line 109
+2014-12-26 22:24:51 - PHP WARNING:  strpos() expects at least 2 parameters, 1 given in C:\i-net\htdocs\payment\system\library\validation.php on line 70
+2014-12-26 23:11:33 - PHP WARNING:  checkdate() expects parameter 1 to be long, string given in C:\i-net\htdocs\payment\system\library\validation.php on line 503
+2014-12-27 8:02:57 - PHP NOTICE:  Undefined property: Storage::$mui in C:\i-net\htdocs\payment\system\library\validation.php on line 36
+2014-12-27 14:54:52 - PHP NOTICE:  Use of undefined constant message - assumed 'message' in C:\i-net\htdocs\payment\controllers\PaymentController.php on line 23
+2014-12-27 14:57:18 - PHP NOTICE:  Use of undefined constant message - assumed 'message' in C:\i-net\htdocs\payment\controllers\PaymentController.php on line 23
+2014-12-27 14:58:06 - PHP NOTICE:  Use of undefined constant message - assumed 'message' in C:\i-net\htdocs\payment\controllers\PaymentController.php on line 23
+2014-12-27 14:58:06 - PHP NOTICE:  Error: Could not load view views/Payment/Success.tpl! in C:\i-net\htdocs\payment\system\engine\view.php on line 90
+2014-12-27 14:59:11 - PHP NOTICE:  Error: Could not load view views/Payment/Success.tpl! in C:\i-net\htdocs\payment\system\engine\view.php on line 90
+2014-12-27 15:03:13 - PHP NOTICE:  Error: Could not load view views/Payment/Success.tpl! in C:\i-net\htdocs\payment\system\engine\view.php on line 90
+2014-12-27 16:01:01 - PHP NOTICE:  Array to string conversion in C:\i-net\htdocs\payment\views\Shared\layout.tpl on line 33
+2014-12-27 16:03:10 - PHP NOTICE:  Array to string conversion in C:\i-net\htdocs\payment\views\Shared\layout.tpl on line 33
+2015-01-24 13:23:00 - PHP NOTICE:  Error: Class not exist Games_Main_model in Games/Main! in C:\i-net\htdocs\payment\system\engine\joiner.php on line 159

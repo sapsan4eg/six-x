@@ -1,0 +1,1 @@
+<h1>You autorizated on this action <?php if(isset($Action)){ echo $Action;}?></h1>
