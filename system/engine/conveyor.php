@@ -83,7 +83,7 @@ class Conveyor extends Object
    		$controller = $this->join->controller($controllerName);
 		
 		// check exist action in controller
-   		if ( ! method_exists($controller, $action))
+   		if ( ! method_exists($controller, $action) OR array_search($action, get_class_methods($controller)) === FALSE)
    		{
    			$view = new View(array('router' => $this->router));
 			$view->RedirectToAction($this->router->route['default_action'] , $this->router->route['error_controller']);	

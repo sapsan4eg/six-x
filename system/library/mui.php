@@ -28,11 +28,11 @@
  */
 class Mui
 {	
-	private $_default = 'en_EN';
-	private $_lang;
-	private $_dictionary = array();
-	private $_name;
-	private $_list_languges = array();
+	protected $_default = 'en_EN';
+	protected $_lang;
+	protected $_dictionary = array();
+	protected $_name;
+	protected $_list_languges = array();
 	
 	/**
 	 * Constructor

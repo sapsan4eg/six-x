@@ -10,7 +10,9 @@ class Bundles
 						self::TakeCss('codemirror/monokai.min') . self::TakeJs('codemirror/codemirror') . 
 						self::TakeJs('codemirror/mode/xml/xml'));
 		self::setValue( 'summer', self::TakeCss('summernote/summernote') . self::TakeJs('summernote/summernote'));
-		self::setValue( 'payment', self::TakeJs('jquery.payment') . self::TakeCss('payment'));	}
+		self::setValue( 'payment', self::TakeJs('jquery.payment') . self::TakeCss('payment'));
+		self::setValue( 'highcharts', self::TakeJs('highcharts/highcharts'));
+		self::setValue( 'highcharts3d', self::TakeJs('highcharts/highcharts-3d'));	}
 	private static function setValue($key, $value)
 	{		isset(self::$bundles[$key]) ? self::$bundles[$key] .= $value : self::$bundles[$key] = $value;	}
 	public static function getValue($key)

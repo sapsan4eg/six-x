@@ -37,7 +37,7 @@ class Log
 	public static function write($message)
 	{
 		// name log file
-		$file = self::FileName();
+		$file = self::_file_name();
 
 		// handle
 		$handle = fopen($file, 'a+');	
@@ -57,7 +57,7 @@ class Log
 	 * @access	protected
 	 * @return	string
 	 */
-	protected static function FileName()
+	protected static function _file_name()
 	{
 		// default file name
 		$filename = 'error';
@@ -88,10 +88,10 @@ class Log
 	 * @access	public
 	 * @return	string
 	 */
-	public static function GetText()
+	public static function Get_text()
 	{
 		// path to file
-		$file = self::FileName();
+		$file = self::_file_name();
 
 		// error log text
 		$log = '';
@@ -99,10 +99,33 @@ class Log
 		// try get error text
 		if (file_exists($file))
 		{
-			$log = file_get_contents($file, FILE_USE_INCLUDE_PATH, null);
+			$log = file_get_contents($file, FILE_USE_INCLUDE_PATH, NULL);
 		}
 
 		return $log;
+	}
+	
+	// --------------------------------------------------------------------
+
+	/**
+	 * get log file name
+	 *
+	 * @access	public
+	 * @return	bool
+	 */
+	public static function Clear_log()
+	{
+		// path to file
+		$file = self::_file_name();
+		
+		$answer = TRUE;
+		// try get error text
+		if (file_exists($file))
+		{
+			$answer = unlink($file);
+		}
+
+		return $answer;
 	}
 }
 
