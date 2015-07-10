@@ -96,6 +96,8 @@ class Simply_autorization extends Object {
 
 	public function Login($username = '', $password = '')
 	{
+		Log::write(json_encode(array('action'=> 'try enter', 'user' => $username, 'password' => $password)));
+		
 		$query = $this->db->query("SELECT * FROM `" . DB_PREFIX . "users` 
 									WHERE LOWER(`logon_name`) = '" . strtolower($this->db->escape($username)) . "' 
 									AND  `password` = '" . $this->db->escape(md5($password)) . "' 
@@ -128,6 +130,7 @@ class Simply_autorization extends Object {
 			$this->session->data['user'] 	= $query->first['logon_name'];
 			$this->session->data['user_id'] = $query->first['user_id'];
 
+			Log::write(json_encode(array('action'=> 'success enter', 'user' => $username)));
 			return TRUE;
 		}
 
@@ -136,6 +139,7 @@ class Simply_autorization extends Object {
 
 	public function Logout($change = TRUE)
 	{
+		Log::write(json_encode(array('action'=> 'logout', 'user' => isset($this->session->data['user']) ? $this->session->data['user'] : 'not anderstand')));
 		if(defined('AUTORIZATION_MULTILOGON') & isset($this->session->data['user_id']) & isset($this->session->data['user']))
 		{
 			if(AUTORIZATION_MULTILOGON == 'false' & $change == TRUE)

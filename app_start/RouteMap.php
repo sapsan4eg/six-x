@@ -12,4 +12,6 @@ class RouteMap
 		self::$routes[] = array('name' => 'default', 'controller' => 'Home', 'action' => 'Index', 'url' => '{controller}/{action}/', 'error_controller' => 'Error');	
 	}
 }
-?>
+
+/* End of file RouteMap.php */
+/* Location: ./app_start/RouteMap.php */

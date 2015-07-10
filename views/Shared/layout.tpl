@@ -5,6 +5,8 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php if(isset($title)){ echo $title;}?></title>
+  <meta name="description" content="<?php echo isset($description) ? $description : "";?>" />
+  <meta name="keywords" content="<?php if(isset($keywords)){ echo $keywords;}?>" />
   <?php echo Bundles::getValue('css') . Bundles::getValue('js');?>
 </head>
 <body>

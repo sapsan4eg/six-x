@@ -6,23 +6,46 @@ class HomeController extends Controller
 		$this->join->model('Main');
 		$this->MainModel->get_main_values();
 		$this->view->links = $this->MainModel->home_links();
-		return $this->view->ViewResult();
+		$this->join->model('Story/Manipulation');
+		$story = $this->StoryManipulationModel->show_story(1, $this->mui->get_lang());
+		if(count($story) > 0)
+		{
+			$this->view->title = urldecode($story['meta_title']);
+			$this->view->bodytext = htmlspecialchars_decode(urldecode($story['texts']));
+			$this->view->description = urldecode($story['meta_description']);
+			$this->view->keywords = urldecode($story['meta_keyword']);
+		}
+		return $this->view->ViewResult();
 	}
 
 	public function Test()
 	{
-		$this->view->RedirectToAction('Index', 'Test');	
+		$this->view->RedirectToAction('Index', 'Test');
+	
 	}
 
 	public function News()
 	{
 		$this->view->FileResult(DIR_IMAGE . 'test.jpg', 'newname');
-	}
+
+	}
 
 	public function Partial()
 	{
 		$this->join->model('Main');
 		$this->view->links = $this->MainModel->home_links();
+        $this->join->model('Main');
+        $this->MainModel->get_main_values();
+        $this->view->links = $this->MainModel->home_links();
+        $this->join->model('Story/Manipulation');
+        $story = $this->StoryManipulationModel->show_story(1, $this->mui->get_lang());
+        if(count($story) > 0)
+        {
+            $this->view->title = urldecode($story['meta_title']);
+            $this->view->bodytext = htmlspecialchars_decode(urldecode($story['texts']));
+            $this->view->description = urldecode($story['meta_description']);
+            $this->view->keywords = urldecode($story['meta_keyword']);
+        }
 		return $this->view->PartialViewResult('Index');
 	}
 
@@ -39,7 +62,8 @@ class HomeController extends Controller
 			}
 		}
 		return $this->view->JsonResult($array);
-	}
+	}
+
 }
 
 /* End of file HomeController.php */

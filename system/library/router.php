@@ -6,7 +6,7 @@
  *
  * @package		six-x
  * @author		Yuri Nasyrov <sapsan4eg@ya.ru>
- * @copyright	Copyright (c) 2014 - 2014, Yuri Nasyrov.
+ * @copyright	Copyright (c) 2014 - 2015, Yuri Nasyrov.
  * @license		http://six-x.org/guide/license.html
  * @link		http://six-x.org
  * @since		Version 1.0.0.0
@@ -112,6 +112,10 @@ class Router
 		}
 		else 
 		{
+			if(defined('DIRECTION_LINKS') AND strtoupper(DIRECTION_LINKS) == 'REVERS')
+			{
+				$this->_direction = 'reverse';
+			}
 			// check transmitted by get names controller and action
 			isset($get['controller']) ? $controller = $get['controller'] : FALSE;
 			isset($get['action']) ? $action = $get['action'] : FALSE;
@@ -446,6 +450,32 @@ class Router
 		}
 		
 		$url = substr($url, 0, strlen($url) - 1);
+		
+		return $url;		
+	}
+	
+	// --------------------------------------------------------------------
+
+	/**
+	 * create url
+	 *
+	 * @access	public
+	 * @param	string
+	 * @param	string
+	 * @param	array
+	 * @return	string
+	 */
+	public static function Source($name = '')
+	{
+		// create url string		
+		$url = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . $_SERVER['HTTP_HOST'];
+
+		$path = substr(HTTP_SERVER, strpos(HTTP_SERVER, '//') + 2);
+
+		strpos($path, '/') > 0 ? $path = substr($path, strpos($path, '/') + 1) : $path = '';
+		
+		$url .= '/' . $path;
+		$url = ((strlen($url) - 1) == strrpos($url, '/') ? $url : $url . '/') . $name;
 		
 		return $url;		
 	}

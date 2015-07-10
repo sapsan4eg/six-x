@@ -2,6 +2,7 @@
 <div class="panel panel-default" style="margin-top:20px;">
 	<div class="panel-heading">
 		<div class="btn btn-danger pull-right" id="clearlog"><i class="fa fa-recycle"></i></div>
+		<div class="btn btn-info pull-right" id="refresh" style="position:relative; left:-10px;"><i class="fa fa-refresh"></i></div>
 		<h3>Error log</h3>
 		
 	</div>
@@ -11,6 +12,9 @@
 </div>
 <script>
     $(function() {
+    	$('#refresh').click(function(){
+    		window.location = "<?php if(isset($RequestedUrl)){ echo $RequestedUrl;}?>";
+    	});
     	$('#clearlog').click(function(){
     		$.ajax({
 		      url: '<?php echo isset($links['clearlog']) ? $links['clearlog']['link'] : '' ?>',

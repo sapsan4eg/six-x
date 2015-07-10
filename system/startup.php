@@ -134,6 +134,7 @@ if ( ! isset($_SERVER['REQUEST_URI']))
  * ------------------------------------------------------
  */
 require_once(DIR_ENGINE. 'loader.php');
+require_once('../vendor/autoload.php');
 
 /*
  * ------------------------------------------------------

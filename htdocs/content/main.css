@@ -19,7 +19,7 @@ src:url("../fonts/wol_reg.eot?#iefix") format("eot"),url("../fonts/wol_reg.woff"
 	src: url('../fonts/1942.ttf') format('truetype');
 }
 h1, h2, h3,
-h4, h5, h6, th, .likeH, .navbar-brand {
+h4, h5, h6, th, text, tspan, .likeH, .navbar-brand {
   color: #000;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -52,7 +52,13 @@ font-weight: inherit;
 }
 input[type="email"], input[type="number"], input[type="password"], input[type="tel"], input[type="url"], input[type="text"] {
 padding: 5px 10px;
-min-width:250px;
+/*min-width:250px;*/
+}
+.input-medium{
+	min-width:250px;
+}
+.centers{
+	vertical-align: middle;
 }
 .navbar-brand{
     font-family: 'report', Tahoma;

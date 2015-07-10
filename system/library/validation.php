@@ -195,7 +195,7 @@ class Validation extends Object
 	 */
 	public function matches($str, $data)
 	{
-		return ($str !== $field) ? FALSE : TRUE;
+		return ($str !== $data) ? FALSE : TRUE;
 	}
 	
 	// --------------------------------------------------------------------
@@ -647,6 +647,20 @@ class Validation extends Object
 			$sum += $digit;
 	    }       
 	    return $sum % 10 === 0;
+	}
+	
+	// --------------------------------------------------------------------
+
+	/**
+	 * Check is null
+	 *
+	 * @access	public
+	 * @param	string
+	 * @return	bool
+	 */
+	public function not_null($str)
+	{
+		return is_null($str) ? FALSE : TRUE;
 	}
 	
 	// --------------------------------------------------------------------

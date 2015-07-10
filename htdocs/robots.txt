@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /content
+Disallow: /fonts
+Disallow: /scripts
+
+
+User-agent: Yandex
+Disallow: /content
+Disallow: /fonts
+Disallow: /scripts
+Clean-param: tracking

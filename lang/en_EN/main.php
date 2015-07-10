@@ -20,6 +20,7 @@ $_['text_separator']        = ' &raquo; ';
 $_['text_name_controller']	= 'Name controller';
 $_['text_name_action']		= 'Name action';
 $_['text_core_version']		= 'Core version';
+$_['success_update']       	= 'successfully updated!';
 
 // Buttons
 $_['button_add_address']    = 'Add Address';
@@ -41,6 +42,8 @@ $_['button_upload']         = 'Upload File';
 $_['button_registration']   = 'Registration';
 $_['button_submit']   		= 'Submit';
 $_['button_details']   		= 'Details';
+$_['button_close']   		= 'Close';
+$_['button_create']   		= 'Create';
 
 // Type warnings
 $_['warning']               = 'Warning';
@@ -60,6 +63,10 @@ $_['error_notfind_user']    = 'sorry but i didnt find you in the database!';
 $_['error_not_have_perm']   = 'you don\'t have permision on this part site, please autorize!';
 $_['error_another_logged']  = 'sorry but another user is logged on this account!';
 $_['error_not_found']       = 'the page you requested cannot be found!';
-
+$_['error_update']       	= 'runtime error updates!';
+$_['error_create']       	= 'runtime error create!';
+$_['error_delete']       	= 'runtime error delete!';
+//message
+$_['message_permanently']   = 'Are you sure you want to delete permanently';
 /* End of file main.php */
 /* Location: ./lang/en_EN/main.php */

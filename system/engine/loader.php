@@ -35,13 +35,16 @@ class Loader
 	 * @param	string
 	 * @param	string
 	 * @param	string
-	 */	
+	 */
+	
 	public static function load($name, $dir, $ext = 'php')
 	{
-		// path to file		
+		// path to file
+		
 		$file = $dir .'/' . $name . '.' . $ext;
 
-		// check exist the file		
+		// check exist the file
+		
 		if (file_exists($file)) 
 		{
 			require_once($file);
@@ -50,7 +53,8 @@ class Loader
 		{
 			trigger_error('Error: Could not load ' . $name . ' from ' . $dir . '!');
 			exit();
-		}	
+		}
+	
 	}
 
 	/**
@@ -63,22 +67,23 @@ class Loader
 	{
 		// list of path
 		$list_dir = array(DIR_ENGINE, DIR_LIBRARY, DIR_START, DIR_MODELS);
-
+        $name = explode('\\', strtolower($name));
 		// loop to path list
 		foreach($list_dir as $dir)
 		{
 			// path to file
-			$file = $dir .'/' . strtolower($name) . '.php';
+			$file = $dir . $name[count($name) - 1] . '.php';
 
 			// check exist the file
 			if (file_exists($file))
 			{
 				require_once($file);
-				break;
+				return;
 			}
 		}
 	}
-}
+
+}
 
 /* End of file loader.php */
 /* Location: ./system/engine/loader.php */

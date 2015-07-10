@@ -18,7 +18,6 @@ class ErrorController extends Controller
 	}
 	public function ErrorLog()
 	{
-		echo serialize(array('controller' => array('Roles' => array('admin'))));
 		$this->join->model('Main');
 		$this->MainModel->get_main_values();
 		$this->view->log	= Log::Get_text();

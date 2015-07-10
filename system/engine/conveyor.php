@@ -31,25 +31,25 @@ class Conveyor extends Object
 	 */
 	public function __construct()
 	{
+		$array = array(
+			'HTTP_USER_AGENT' => isset($_SERVER['HTTP_USER_AGENT']) ? $_SERVER['HTTP_USER_AGENT'] : '', 
+			'HTTP_REFERER' => isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : '', 
+			'HTTP_ACCEPT_ENCODING' => isset($_SERVER['HTTP_ACCEPT_ENCODING']) ? $_SERVER['HTTP_ACCEPT_ENCODING'] : '', 
+			'HTTP_ACCEPT_LANGUAGE' => isset($_SERVER['HTTP_ACCEPT_LANGUAGE']) ? $_SERVER['HTTP_ACCEPT_LANGUAGE'] : '', 
+			'REMOTE_ADDR' => isset($_SERVER['REMOTE_ADDR']) ? $_SERVER['REMOTE_ADDR'] : '', 
+			'REQUEST_SCHEME' => isset($_SERVER['REQUEST_SCHEME']) ? $_SERVER['REQUEST_SCHEME'] : '', 
+			'REMOTE_PORT' => isset($_SERVER['REMOTE_PORT']) ? $_SERVER['REMOTE_PORT'] : '', 
+			'SERVER_PROTOCOL' => isset($_SERVER['SERVER_PROTOCOL']) ? $_SERVER['SERVER_PROTOCOL'] : '', 
+			'REQUEST_METHOD' => isset($_SERVER['REQUEST_METHOD']) ? $_SERVER['REQUEST_METHOD'] : '', 
+			'QUERY_STRING' => isset($_SERVER['QUERY_STRING']) ? $_SERVER['QUERY_STRING'] : '');
+		Log::write(json_encode($array));
+
 		// instantiating Storage class
 		$this->_storage = new Storage();
 		
 		// instantiating Joiner class and add to stroage
 		$this->_storage->set('join', new Joiner($this->_storage));
 		
-		// run application
-		$this->_core();
-	}
-	
-	// --------------------------------------------------------------------
-	
-	/**
-	 * Main application method 
-	 *
-	 * @access	protected
-	 */
-	protected function _core()
-	{
 		// instantiating Request class and add to stroage
 		$this->join->library('request');
 		
@@ -93,19 +93,8 @@ class Conveyor extends Object
 		$return = call_user_func_array(array($controller, $action), $arguments);
 		
 		// rendering
-  		$this->_rend($return);	
-	}
-
-	/**
-	 * Rendering 
-	 *
-	 * @access	protected
-	 */
-	protected function _rend($return)
-	{
-		echo $return;
-	}
-}
+  		echo $return;
+	}}
 
 /* End of file conveyor.php */
 /* Location: ./system/engine/conveyor.php */

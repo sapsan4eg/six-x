@@ -2,7 +2,7 @@
 	 foreach ($list_languges as $key => $value) {?>
 		<li><a class="lang_site likeButton" id="<?php echo $key;?>">
 			<span class="visible-xs col-xs-3"><?php echo $value;?></span>
-			<img src="<?php echo HTTP_SERVER;?>lang/<?php echo $key;?>/flag.png" alt="<?php echo $value;?>" title="<?php echo $value;?>" />			
+			<img src="<?php echo HTTP_IMAGE;?>lang/<?php echo $key;?>.png" alt="<?php echo $value;?>" title="<?php echo $value;?>" />
 			</a>
 		</li>
 	<?php } 

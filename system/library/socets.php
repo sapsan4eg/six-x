@@ -53,7 +53,9 @@ class Socets extends Object
 	 */
 	public function get_content_http($get)
 	{
-		$fp = fsockopen($this->_server, $this->_port, $errno, $errstr, 30);
+		$client = new GuzzleHttp\Client();
+		echo extension_loaded  ('openssl') ? 'yes':'no';
+		$fp = fsockopen('ssl://'.$this->_server, $this->_port, $errno, $errstr, 30);
 		if ( ! $fp) 
 		{
 			trigger_error('Error: ' . $errstr . ' ()' . $errno . ')!');
@@ -61,8 +63,8 @@ class Socets extends Object
 		} 
 		else 
 		{
-		    $out = "GET " . $get . " HTTP/1.1\r\n";
-			$out .= "User-Agent: Mozilla/5.0 Firefox/3.6.12\r\n";;
+		  //  $out = "GET " . $get . " HTTP/1.1\r\n";
+			$out .= "User-Agent: Mozilla/5.0 Firefox/3.6.12\r\n";
 		    $out .= "Host: " . $this->_server . "\r\n";
 		    $out .= "Connection: Close\r\n\r\n";
 		    fwrite($fp, $out);

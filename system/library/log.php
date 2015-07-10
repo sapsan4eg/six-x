@@ -36,11 +36,8 @@ class Log
 	 */
 	public static function write($message)
 	{
-		// name log file
-		$file = self::_file_name();
-
 		// handle
-		$handle = fopen($file, 'a+');	
+		$handle = fopen(self::_file_name(), 'a+');	
 
 		// writing into stream	
 		fwrite($handle, date('Y-m-d G:i:s') . ' - ' . $message . "\n");
@@ -59,25 +56,7 @@ class Log
 	 */
 	protected static function _file_name()
 	{
-		// default file name
-		$filename = 'error';
-
-		// check isset file name
-		if(defined('ERR_FILE'))
-		{
-			$filename = ERR_FILE;
-		}
-
-		// default dir to log file
-		$dir = 'system/logs/';
-
-		// check isset dir to log file
-		if(defined('ERR_PATH'))
-		{
-			$dir = ERR_PATH;
-		}
-
-		return $dir . $filename . '.txt';	
+		return (defined('DIR_ERRORS') ? DIR_ERRORS : DIR_SYSTEM . 'logs/') . (defined('ERR_FILE') ? ERR_FILE : 'error') . '.log';
 	}
 
 	// --------------------------------------------------------------------
@@ -90,19 +69,7 @@ class Log
 	 */
 	public static function Get_text()
 	{
-		// path to file
-		$file = self::_file_name();
-
-		// error log text
-		$log = '';
-
-		// try get error text
-		if (file_exists($file))
-		{
-			$log = file_get_contents($file, FILE_USE_INCLUDE_PATH, NULL);
-		}
-
-		return $log;
+		return file_exists(self::_file_name()) ? file_get_contents(self::_file_name(), FILE_USE_INCLUDE_PATH, NULL) : '';
 	}
 	
 	// --------------------------------------------------------------------
@@ -115,17 +82,7 @@ class Log
 	 */
 	public static function Clear_log()
 	{
-		// path to file
-		$file = self::_file_name();
-		
-		$answer = TRUE;
-		// try get error text
-		if (file_exists($file))
-		{
-			$answer = unlink($file);
-		}
-
-		return $answer;
+		return file_exists(self::_file_name()) ? unlink(self::_file_name()) : TRUE;
 	}
 }
 

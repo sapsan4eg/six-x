@@ -1,2 +1,0 @@
-2015-01-28 22:11:46 - PHP NOTICE:  Undefined variable: match in C:\i-net\htdocs\payment\models\Games\Main.php on line 303
-2015-01-28 22:11:48 - PHP NOTICE:  Undefined variable: match in C:\i-net\htdocs\payment\models\Games\Main.php on line 303

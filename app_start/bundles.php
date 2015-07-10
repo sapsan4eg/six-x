@@ -18,9 +18,12 @@ class Bundles
 	public static function getValue($key)
 	{		return isset(self::$bundles[$key]) ? self::$bundles[$key] : null ;	}
     private static function TakeCss($link ='')
-	{	   return "<link href=\"" . HTTP_SERVER . DIR_CONTENT . $link . ".css\" rel=\"stylesheet\">" . PHP_EOL;	}
+	{	   return "<link href=\"" . Router::Source(DIR_CONTENT . $link) . ".css\" rel=\"stylesheet\">" . PHP_EOL;	}
 	private static function TakeJs($link ='')
 	{
-	   return "<script src=\"" . HTTP_SERVER . DIR_SCRIPTS . $link .".js\"></script>". PHP_EOL;
+	   return "<script src=\"" . Router::Source(DIR_SCRIPTS . $link) .".js\"></script>". PHP_EOL;
 	}}
-?>
+
+
+/* End of file bundles.php */
+/* Location: ./app_start/bundles.php */
