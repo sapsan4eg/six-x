@@ -5,7 +5,7 @@ class PaymentController extends Controller
 	{		
 		$this->join->model('Payment/Main');
 		$this->PaymentMainModel->get_values();
-		$this->view->links = array('mainlink' => array('link' => $this->router->Link('Index', 'Home'), 'title' => $this->mui->get('text_home')));
+		$this->view->links = array('mainlink' => $this->router->Link('Index', 'Home'));
 		if($this->request->server['REQUEST_METHOD'] == 'POST')
 		{
 			$answer = $this->PaymentMainModel->validate_post_data($this->request->post);
@@ -28,10 +28,10 @@ class PaymentController extends Controller
 			{
 				$this->join->model('Payment/Main');
 				$this->PaymentMainModel->get_values();
-				$this->view->linkBuck = array('link' => $this->router->link('Index'), 'title' => $this->mui->get('button_add_cart'));
+				$this->view->linkBuck = array('link' => $this->router->link('Index'), 'title' => _('button_add_cart'));
 				$this->view->card_data = $this->view->message[2];
 				$this->view->message = null;
-				$this->view->answer_title = $this->mui->get('success_card_add');
+				$this->view->answer_title = _('success_card_add');
 				return $this->view->ViewResult();
 			}
 		}

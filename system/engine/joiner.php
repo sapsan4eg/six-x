@@ -2,11 +2,11 @@
 /**
  * Six-X
  *
- * An open source application development framework for PHP 5.3.0 or newer
+ * An open source application development framework for PHP 5.4.0 or newer
  *
  * @package		six-x
  * @author		Yuri Nasyrov <sapsan4eg@ya.ru>
- * @copyright	Copyright (c) 2014 - 2014, Yuri Nasyrov.
+ * @copyright	Copyright (c) 2014 - 2015, Yuri Nasyrov.
  * @license		http://six-x.org/guide/license.html
  * @link		http://six-x.org
  * @since		Version 1.0.0.0
@@ -61,28 +61,14 @@ class Joiner extends Object {
 	 * @param	array
 	 * @param	mixed
 	 */
-	public function library($name, $arguments = array(), $alternative_name = FALSE)
-	{
-		// get the class name
-		$class = $this->_take_class_name($name);
-		
-		// remove underline in the name
-		$name = str_replace("_", "", $name);
-		
-		// check alternative name
-		if($alternative_name === FALSE )
-		{
-			$alternative_name = $name;
-		}
-		
-		// load and instantiating class then add to stroage
-		$this->_try_join($name, $class, DIR_LIBRARY, $arguments, $alternative_name);
-	}	
-	
+    public function library($class, $arguments = array(), $alternative_name = FALSE)
+    {
+        $this->_join($class, $arguments, $alternative_name);
+    }
 	// --------------------------------------------------------------------
 	
 	/**
-	 * load and instantiating library class
+	 * load and instantiating controller class
 	 *
 	 * @access	public
 	 * @param	string
@@ -99,23 +85,70 @@ class Joiner extends Object {
 		$name = str_replace("_", "/", $name);	
 		
 		// load and instantiating class then return
-		return $this->_try_join($name . 'Controller', $class, DIR_CONTROLLERS, $arguments, $alternative_name, FALSE);
+		return $this->_join($class, $arguments, $alternative_name, FALSE);
 	}
 	
 	// --------------------------------------------------------------------
 	
 	/**
-	 * load and instantiating library class
-	 *
-	 * @access	protected
-	 * @param	string
-	 * @param	string
-	 * @param	string
-	 * @param	array
-	 * @param	mixed
-	 * @param	bool
-	 * @return	mixed
+	 * load and instantiating class
+     *
+     * @access	public
+     * @param	string
+     * @param	array
+     * @param	mixed
+     * @param	bool
+     * @return	mixed
 	 */
+    protected function _join($class, $arguments = array(), $alternative_name = FALSE, $storage = TRUE)
+    {
+        // instantiating ReflectionClass
+        $ref_class = new ReflectionClass($class);
+
+        // check extends class of the object or controller
+        if(get_parent_class($class) !== FALSE && (get_parent_class($class) == 'Object' OR get_parent_class($class) == 'Controller'))
+        {
+            array_unshift($arguments, $this->_storage);
+        }
+
+        $object = $ref_class->newInstanceArgs($arguments);
+
+        if($storage)
+        {
+            // check alternative name
+            if($alternative_name === FALSE)
+            {
+                $name = explode('\\', strtolower(get_class($object)));
+                $name = $name[count($name) - 1];
+            }
+            else
+            {
+                $name = $alternative_name;
+            }
+
+            $this->_storage->set($name, $object);
+            return;
+        }
+        else
+        {
+            return $object;
+        }
+    }
+
+    // --------------------------------------------------------------------
+
+    /**
+     * load and instantiating library class
+     *
+     * @access	protected
+     * @param	string
+     * @param	string
+     * @param	string
+     * @param	array
+     * @param	mixed
+     * @param	bool
+     * @return	mixed
+     */
 	protected function _try_join($name, $class, $dir, $arguments = array(), $alternative_name = FALSE, $to_storage = TRUE)
 	{
 		// load the class file
@@ -149,7 +182,6 @@ class Joiner extends Object {
 				}
 				else 
 				{
-
 					return $ref_class->newInstanceArgs($arguments);
 				}
 			}

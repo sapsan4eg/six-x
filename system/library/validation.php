@@ -2,11 +2,11 @@
 /**
  * Six-X
  *
- * An open source application development framework for PHP 5.3.0 or newer
+ * An open source application development framework for PHP 5.4.0 or newer
  *
  * @package		six-x
  * @author		Yuri Nasyrov <sapsan4eg@ya.ru>
- * @copyright	Copyright (c) 2014 - 2014, Yuri Nasyrov.
+ * @copyright	Copyright (c) 2014 - 2015, Yuri Nasyrov.
  * @license		http://six-x.org/guide/license.html
  * @link		http://six-x.org
  * @since		Version 1.0.0.0
@@ -35,8 +35,6 @@ class Validation extends Object
 	{
 		$this->_storage = new Storage();
 		$this->db = $storage->get('db');
-		$this->mui = $storage->get('mui');
-		$this->mui->load('Validation/validation');
 	}
 	
 	// --------------------------------------------------------------------
@@ -60,7 +58,7 @@ class Validation extends Object
 		// No data or incorrectly set the rules, then what are we doing here?
 		if( ! is_string($data) OR ! is_string($rules))
 		{
-			$this->current_error = $this->mui->get('validation_no_data');
+			$this->current_error = _('validation_no_data');
 			return FALSE;
 		}		
 		
@@ -77,7 +75,7 @@ class Validation extends Object
 		// This value must not be empty		
 		if(strlen($data) == 0 && (strpos($data, 'required') !== FALSE OR strpos($data, 'isset') !== FALSE))
 		{
-			$this->current_error = $this->mui->get('validation_required');
+			$this->current_error = _('validation_required');
 			return FALSE;
 		}
 		
@@ -116,7 +114,7 @@ class Validation extends Object
 					}
 					if($result === FALSE)
 					{
-						$this->current_error = $this->mui->get('validation_native') . ' ' . $rule;
+						$this->current_error = _('validation_native') . ' ' . $rule;
 						return FALSE;
 					}
 				}
@@ -135,7 +133,7 @@ class Validation extends Object
 			}
 			if($result === FALSE)
 			{
-				$this->current_error = str_replace('{param}', $param, $this->mui->get('validation_' . $rule));
+				$this->current_error = str_replace('{param}', $param, _('validation_' . $rule));
 				return FALSE;
 			}
 		}

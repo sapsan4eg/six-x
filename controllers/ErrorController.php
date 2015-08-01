@@ -8,10 +8,10 @@ class ErrorController extends Controller
 	public function not_found()
 	{
 		$data['code'] = '404';
-		$data['message'] = array("danger", $data['code'], $this->mui->get('error_not_found'));
+		$data['message'] = array("danger", $data['code'], _('error_not_found'));
 		$data['title'] = "Error: " .$data['code'];
 		$this->view->set(array_merge($this->view->get(), $data));	
-		$this->view->links = array('mainlink' => array('link' => $this->router->Link('Index', 'Home'), 'title' => ''));	
+		$this->view->links = array('mainlink' => $this->router->Link('Index', 'Home'));
 		$this->join->model('Main');
 		$this->MainModel->get_main_values();
 		return $this->view->NotFoundResult('error');
@@ -21,8 +21,8 @@ class ErrorController extends Controller
 		$this->join->model('Main');
 		$this->MainModel->get_main_values();
 		$this->view->log	= Log::Get_text();
-		$this->view->links	= array('mainlink' => array('link' => $this->router->Link('Index', 'Home'), 'title' => ''),
-									'clearlog' => array('link' => $this->router->Link('ErrorLogClear', 'Error'), 'title' => '')
+		$this->view->links	= array('mainlink' => $this->router->Link('Index', 'Home'),
+									'clearlog' => $this->router->Link('ErrorLogClear', 'Error')
 		);	
 		return $this->view->ViewResult('Log');
 	}

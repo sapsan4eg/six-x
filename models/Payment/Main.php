@@ -15,27 +15,24 @@ class Payment_Main_model extends Object
 		// get main values from main model
 		$this->MainModel->get_main_values();
 		
-		// load language locale
-		$this->mui->load('Payment/main');
-		
 		// insert values translated text
-		$data['personal_card']		= $this->mui->get('text_personal_card');
-		$data['number']				= $this->mui->get('text_card_number');
-		$data['expiry']				= $this->mui->get('text_expiry');
-		$data['cvc']				= $this->mui->get('text_cvc');
-		$data['card_holder']		= $this->mui->get('text_card_holder_name');
-		$data['expiry_holder']		= $this->mui->get('expiry_holder');
-		$data['cvc_holder']			= $this->mui->get('cvc_holder');
-		$data['button_submit']		= $this->mui->get('button_submit');
-		$data['help_cvc_title']		= $this->mui->get('help_cvc_title');
-		$data['help_cvc_content']	= $this->mui->get('help_cvc_content');
+		$data['personal_card']		= _('text_personal_card');
+		$data['number']				= _('text_card_number');
+		$data['expiry']				= _('text_expiry');
+		$data['cvc']				= _('text_cvc');
+		$data['card_holder']		= _('text_card_holder_name');
+		$data['expiry_holder']		= _('expiry_holder');
+		$data['cvc_holder']			= _('cvc_holder');
+		$data['button_submit']		= _('button_submit');
+		$data['help_cvc_title']		= _('help_cvc_title');
+		$data['help_cvc_content']	= _('help_cvc_content');
 		
 		// error translated text
-		$data['error_main']			= $this->mui->get('error_main');
-		$data['error_number']		= $this->mui->get('error_number');
-		$data['error_expiry']		= $this->mui->get('error_expiry');
-		$data['error_cvc']			= $this->mui->get('error_cvc');
-		$data['error_cardholder']	= $this->mui->get('error_cardholder');
+		$data['error_main']			= _('error_main');
+		$data['error_number']		= _('error_number');
+		$data['error_expiry']		= _('error_expiry');
+		$data['error_cvc']			= _('error_cvc');
+		$data['error_cardholder']	= _('error_cardholder');
 		
 		$this->view->set(array_merge($this->view->get(), $data));
 	}
@@ -63,25 +60,25 @@ class Payment_Main_model extends Object
 		// Check number data
 		if( ! $this->validation->is_valid(isset($data['cc-number']) ? $data['cc-number'] : NULL, 'clear_space|required|card_number|is_unique[payment.card_number]'))
 		{
-			$errors[] = $this->mui->get('error_number') . ' (' . $this->validation->current_error . ')';
+			$errors[] = _('error_number') . ' (' . $this->validation->current_error . ')';
 		}
 		
 		// Check expire data$data['cc-exp']
 		if( ! $this->validation->is_valid(isset($data['cc-exp']) ? $data['cc-exp'] : NULL, 'required|dates_greater_now'))
 		{
-			$errors[] = $this->mui->get('error_expiry') . ' (' . $this->validation->current_error . ')';
+			$errors[] = _('error_expiry') . ' (' . $this->validation->current_error . ')';
 		}
 		
 		// Check cvc data
 		if( ! $this->validation->is_valid(isset($data['cc-cvc']) ? $data['cc-cvc'] : NULL, 'required|min_length[3]|max_length[4]'))
 		{
-			$errors[] = $this->mui->get('error_cvc') . ' (' . $this->validation->current_error . ')';
+			$errors[] = _('error_cvc') . ' (' . $this->validation->current_error . ')';
 		}
 		
 		// Check card holder name
 		if( ! $this->validation->is_valid(isset($data['holder']) ? $data['holder'] : NULL, 'alpha_space'))
 		{
-			$errors[] = $this->mui->get('error_cardholder') . ' (' . $this->validation->current_error . ')';
+			$errors[] = _('error_cardholder') . ' (' . $this->validation->current_error . ')';
 		}
 		if(count($errors) == 0)
 		{
@@ -98,7 +95,7 @@ class Payment_Main_model extends Object
 			} 
 			catch(Exception $e)
 			{
-				$errors[] = $this->mui->get('error_upload_999') . ' ' . $e->getCode();
+				$errors[] = _('error_upload_999') . ' ' . $e->getCode();
 			}
 		}
 		if(count($errors) > 0)
@@ -109,7 +106,7 @@ class Payment_Main_model extends Object
 		}
 
 		// Return answer
-		$return = array(array($type_answer, $this->mui->get($type_answer),  $answer), $data);
+		$return = array(array($type_answer, _($type_answer),  $answer), $data);
 		return $return;
 	}
 
@@ -135,10 +132,10 @@ class Payment_Main_model extends Object
 		$errorlist .= '</ol>';
 		
 		// error text to send browser
-		$error = $this->mui->get('error_main') . " <a href='#' id='button_details'>" . $this->mui->get('button_details') . " ...</a>
+		$error = _('error_main') . " <a href='#' id='button_details'>" . _('button_details') . " ...</a>
 		<script>
 			$(function(){
-				$('#button_details').popover({trigger : 'focus', title : '" . $this->mui->get('error_main') . 
+				$('#button_details').popover({trigger : 'focus', title : '" . _('error_main') .
 				"', container : 'body', html : true, content : '" . $errorlist . "'}).click(function(e){e.preventDefault();});
 			});
 		</script>

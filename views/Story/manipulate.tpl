@@ -27,7 +27,7 @@
 			<?php if(isset($storys)) { $a = 0;?>
 				<?php foreach ($storys as $value) {?>
 			<li <?php if($a == 0) echo 'class="active"';?>><a href="#language_<?php echo $value['langid']; ?>" role="tab" data-toggle="tab">
-				<img src="<?php echo HTTP_SERVER . DIR_LANGUAGE . $value['locale'] . '/flag.png'; ?>" />
+				<img src="<?php echo HTTP_IMAGE . 'lang/' . $value['locale'] . '.png'; ?>" />
 				<?php echo $value['name']; ?></a>
 			</li>
 				<?php $a++;}?>
@@ -38,7 +38,7 @@
 				<?php foreach ($storys as $value) {?>
 			 <div class="tab-pane<?php if($a == 0) echo ' active';?>" id="language_<?php echo $value['langid']; ?>">
 			 	<h5><?php echo $title_text; ?></h5>
-			 	<input type="text" name="title[<?php echo $value['langid'];?>]" placeholder="<?php echo $title_text; ?>" class="input-long" id="title_text_<?php echo $value['langid']; ?>" value="<?php echo $value['title']; ?>">
+			 	<input type="text" autocomplete="off" name="title[<?php echo $value['langid'];?>]" placeholder="<?php echo $title_text; ?>" class="input-long" id="title_text_<?php echo $value['langid']; ?>" value="<?php echo $value['title']; ?>">
 			 	<h5><?php echo $text_body; ?></h5>
 				<textarea class="form-control" name="text[<?php echo $value['langid'];?>]" placeholder="<?php echo $text_body; ?>" id="text_story_<?php echo $value['langid']; ?>"><?php echo $value['text']; ?></textarea>
 				<div class="row">

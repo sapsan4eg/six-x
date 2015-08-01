@@ -2,11 +2,11 @@
 /**
  * Six-X
  *
- * An open source application development framework for PHP 5.3.0 or newer
+ * An open source application development framework for PHP 5.4.0 or newer
  *
  * @package		six-x
  * @author		Yuri Nasyrov <sapsan4eg@ya.ru>
- * @copyright	Copyright (c) 2014 - 2014, Yuri Nasyrov.
+ * @copyright	Copyright (c) 2014 - 2015, Yuri Nasyrov.
  * @license		http://six-x.org/guide/license.html
  * @link		http://six-x.org
  * @since		Version 1.0.0.0
@@ -36,7 +36,8 @@ final class View {
 	 * @param	array
 	 */
 	public function __construct($data = array())
-	{
+	{
+
 		$this->set($data);
 	}
 
@@ -49,7 +50,8 @@ final class View {
 	 * @return	array
 	 */
 	public function get()
-	{
+	{
+
 		return $this->_data;
 	}
 
@@ -68,7 +70,8 @@ final class View {
 			$this->router = $data['router'];
 			unset($data['router']);
 		}
-		$this->_data = $data;	
+		$this->_data = $data;
+	
 	}
 
 	// --------------------------------------------------------------------
@@ -163,14 +166,16 @@ final class View {
 
 			// check no default layout
 			if(isset($this->_data['layout']))
-			{
+			{
+
 				if(strlen($this->_data['layout']) > 0)
 				{
 					$layoutfile = $this->_data['layout'];
 				}
 			}
 
-			// path to layout file			
+			// path to layout file
+			
 			$file = DIR_VIEWS .DIR_SHARED . $layoutfile . '.' . FILE_VIEW;
 
 			// reqursive to get layout
@@ -324,7 +329,8 @@ final class View {
 			return $return;
 		}
 	}
-}
+
+}
 
 /* End of file view.php */
 /* Location: ./system/engine/view.php */

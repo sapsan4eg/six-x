@@ -3,7 +3,7 @@
  * six-x Version
  * @var string
  */
-	define('VERSION', '0.0.0.3');
+	define('VERSION', '0.6.0.6');
 /**
  * six-x Error display (Display on browser and write on log file = all, Display only on browser = monitor, Only write on log file = log)
  * @var string

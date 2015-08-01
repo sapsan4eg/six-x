@@ -18,8 +18,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="<?php if(isset($links['mainlink'])){ echo $links['mainlink']['link'];} else { echo HTTP_SERVER;}?>" title="<?php if(isset($links['mainlink'])){ echo $links['mainlink']['title'];} ?>" class="navbar-brand" style="padding-left:30px;">SIX-X<br />
-                	<span style="font-size:9px; position:relative; top:-6px;">new PHP MVC framework</span></a>
+                <a href="<?php if(isset($links['mainlink'])){ echo $links['mainlink'];} else { echo HTTP_SERVER;}?>" title="<?php echo _('text_home');?>" class="navbar-brand" style="padding-left:30px;"><?php echo _('vendor');?><br />
+                	<span style="font-size:9px; position:relative; top:-6px;"><?php echo _('vendor_description');?></span></a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -42,11 +42,11 @@
 
 	</div>
 	<div class="container">
-	<div class="row"><div class="col-md-4" style="padding-top:10px;">Six-X, <?php if(isset($core_version)){ echo $core_version;}?>: <?php echo VERSION;?></div>
+	<div class="row"><div class="col-md-4" style="padding-top:10px;"><?php echo _('vendor');?>, <?php echo _('text_core_version');?>: <?php echo VERSION;?></div>
 		<div class="col-md-4 col-md-offset-4"></div>
 			<ol class="breadcrumb pull-right">
-				<li><?php if(isset($name_controller)){ echo $name_controller;}?>: <?php if(isset($ControllerName)){ echo $ControllerName;}?></li>
-				<li><?php if(isset($name_action)){ echo $name_action;}?>: <?php if(isset($ActionName)){ echo $ActionName;}?></li>
+				<li><?php echo _('text_name_controller');?>: <?php if(isset($ControllerName)){ echo $ControllerName;}?></li>
+				<li><?php echo _('text_name_action');?>: <?php if(isset($ActionName)){ echo $ActionName;}?></li>
 			</ol>
 		</div>
 	</div>

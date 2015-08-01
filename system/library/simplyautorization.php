@@ -2,11 +2,11 @@
 /**
  * Six-X
  *
- * An open source application development framework for PHP 5.3.0 or newer
+ * An open source application development framework for PHP 5.4.0 or newer
  *
  * @package		six-x
  * @author		Yuri Nasyrov <sapsan4eg@ya.ru>
- * @copyright	Copyright (c) 2014 - 2014, Yuri Nasyrov.
+ * @copyright	Copyright (c) 2014 - 2015, Yuri Nasyrov.
  * @license		http://six-x.org/guide/license.html
  * @link		http://six-x.org
  * @since		Version 1.0.0.0
@@ -15,7 +15,7 @@
 
 // ------------------------------------------------------------------------
 
-class Simply_autorization extends Object {
+class SimplyAutorization extends Object {
 	public $Identity = array(
 		'IsAuthenticated' => NULL, 
 		'Name' => NULL, 
@@ -30,7 +30,8 @@ class Simply_autorization extends Object {
 	public function CheckAccess($route)
 	{
 		$havePermission = TRUE;
-		$user_id = 0;
+		$user_id = 0;
+
 		if(isset($this->session->data['user']) && isset($this->session->data['user_id']))
 		{
 			$query = $this->db->query("SELECT * FROM `" . DB_PREFIX . "users` 
@@ -47,11 +48,11 @@ class Simply_autorization extends Object {
 						{
 							$this->db->query("UPDATE `" . DB_PREFIX . "users` 
 									SET `session_time`='" . date('Y-m-d H:i:s') . "' 
-									WHERE `user_id`=" . $query->first['user_id']);
+									WHERE `user_id`=" . $query->first['user_id'], TRUE);
 						}
 						else
 						{
-							$this->session->data['message'] = array('warning',$this->mui->get('warning'), $this->mui->get('error_another_logged'));
+							$this->session->data['message'] = array('warning',_('warning'), _('error_another_logged'));
 							$this->Logout(FALSE);
 							return FALSE;
 						}
@@ -72,14 +73,15 @@ class Simply_autorization extends Object {
 								WHERE `controller_name` = '" . $route['controller'] . "'");
 
 		if($query->count == 1)
-		{
+		{
+
 			$havePermission = $this->HavePermission(unserialize($query->first['permission']), $route, $user_id);
 		}
 
 		if($havePermission == FALSE)
 		{
 			$view = new View(array('router' => $this->router));
-			$this->session->data['message'] = array('warning', $this->mui->get('warning'), $this->mui->get('error_not_have_perm'));
+			$this->session->data['message'] = array('warning', _('warning'), _('error_not_have_perm'));
 			$came = '{controllerFrom=' . $route['controller'] . '&actionFrom=' . $route['action'];
 			if(count($route['arguments']) > 0)
 			{
@@ -104,11 +106,14 @@ class Simply_autorization extends Object {
 									AND `status` = '1'");
 
 		if($query->count == 1)
-		{
+		{
+
 			if(defined('AUTORIZATION_MULTILOGON'))
-			{
+			{
+
 				if(AUTORIZATION_MULTILOGON == 'false')
-				{
+				{
+
 					if(strlen($query->first['session_id']) > 0)
 					{
 						if(session_id() != $query->first['session_id'])
@@ -116,7 +121,7 @@ class Simply_autorization extends Object {
 							$razn = strtotime(date("Y-m-d H:i:s")) - strtotime($query->first['session_time']);
 							if($razn < 1200)
 							{
-								$this->session->data['message'] = array('warning',$this->mui->get('warning'), $this->mui->get('error_another_logged'));
+								$this->session->data['message'] = array('warning',_('warning'), _('error_another_logged'));
 								return FALSE;
 							}
 						}
@@ -124,14 +129,16 @@ class Simply_autorization extends Object {
 
 					$this->db->query("UPDATE `" . DB_PREFIX . "users` 
 										SET `session_id`='" . session_id() . "' 
-										WHERE `user_id`=" . $query->first['user_id']);
+										WHERE `user_id`=" . $query->first['user_id'], TRUE);
+
 				}
 			}
 			$this->session->data['user'] 	= $query->first['logon_name'];
 			$this->session->data['user_id'] = $query->first['user_id'];
 
 			Log::write(json_encode(array('action'=> 'success enter', 'user' => $username)));
-			return TRUE;
+			return TRUE;
+
 		}
 
 		return FALSE;
@@ -149,15 +156,18 @@ class Simply_autorization extends Object {
 											AND LOWER(`logon_name`) = '" . strtolower($this->db->escape($this->session->data['user'])) . "' 
 											AND `status` = '1'");
 				if($query->count == 1)
-				{
+				{
+
 					$this->db->query("UPDATE `" . DB_PREFIX . "users` 
 										SET `session_id`='', session_time='0000-00-00 00:00:00'  
-										WHERE `user_id`=" . $query->first['user_id']);
+										WHERE `user_id`=" . $query->first['user_id'], TRUE);
+
 				}
 			}
 		}
 
-		if(isset($this->session->data['user']))
+
+		if(isset($this->session->data['user']))
 		{
 			unset($this->session->data['user']);
 		}
@@ -165,11 +175,13 @@ class Simply_autorization extends Object {
 		if(isset($this->session->data['user_id']))
 		{
 			unset($this->session->data['user_id']);
-		}
+		}
+
 	}
 
 	private function HavePermission($permissionArray, $route, $user_id)
-	{
+	{
+
 		$permission = FALSE;
 		$checkPermissionOnController = TRUE;
 
@@ -179,7 +191,8 @@ class Simply_autorization extends Object {
 			{
 				$permission = $this->ComparisonPermissions ($permissionArray['actions'][$route['action']], $user_id);
 				$checkPermissionOnController = FALSE;
-			}
+			}
+
 		}
 
 		if(isset($permissionArray['controller']))
@@ -195,7 +208,8 @@ class Simply_autorization extends Object {
 		}
 		else if($checkPermissionOnController == TRUE)
 		{
-			$permission = TRUE;
+			$permission = TRUE;
+
 		}
 
 		return $permission;
@@ -216,7 +230,8 @@ class Simply_autorization extends Object {
 				}
 				elseif($permissions == 'Autorize' & $user_id == 0)
 				{
-					$permission = FALSE;
+					$permission = FALSE;
+
 				}
 			}
 			else
@@ -237,7 +252,8 @@ class Simply_autorization extends Object {
 							$querystring = "SELECT COUNT(t3.user_id) FROM `" . DB_PREFIX . "user_roles` t1, `" . DB_PREFIX . "user_roles` t2, `" . DB_PREFIX . "users_in_roles` t3 WHERE (";
 							foreach($permissions['Roles'] as $value)
 							{
-								$querystring .= "t1.role_name = '" . $value . "' OR ";
+								$querystring .= "t1.role_name = '" . $value . "' OR ";
+
 							}
 
 							$querystring = substr($querystring,0, strlen($querystring) -3);

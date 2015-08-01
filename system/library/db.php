@@ -1,12 +1,13 @@
 <?php
+namespace Six_x;
 /**
  * Six-X
  *
- * An open source application development framework for PHP 5.3.0 or newer
+ * An open source application development framework for PHP 5.4.0 or newer
  *
  * @package		six-x
  * @author		Yuri Nasyrov <sapsan4eg@ya.ru>
- * @copyright	Copyright (c) 2014 - 2014, Yuri Nasyrov.
+ * @copyright	Copyright (c) 2014 - 2015, Yuri Nasyrov.
  * @license		http://six-x.org/guide/license.html
  * @link		http://six-x.org
  * @since		Version 1.0.0.0
@@ -24,8 +25,8 @@
  * @author		Yuri Nasyrov <sapsan4eg@ya.ru>
  * @link		http://six-x.org/guide/database/
  */
-class Db
-{
+class Db {
+
 	private $_driver;
 	
 	/**
@@ -34,9 +35,6 @@ class Db
 	 * */
 	public function __construct()
 	{
-		// Load databse driver
-		Loader::load(DB_DRIVER, DIR_DATABASE);
-		
 		// name of class to work with database
 		$driver =  DB_DRIVER . '_x';
 		$this->_driver = new $driver(DB_HOSTNAME, DB_USERNAME, DB_PASSWORD, DB_DATABASE);
@@ -50,9 +48,9 @@ class Db
 	 * @param	string
 	 * @return	mixed
 	 */
-  	public function query($sql) 
+  	public function query($sql, $writeble = FALSE)
   	{
-		return $this->_driver->query($sql);
+		return $this->_driver->query($sql, $writeble);
   	}
 
 	// --------------------------------------------------------------------

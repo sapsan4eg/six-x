@@ -17,7 +17,7 @@
     	});
     	$('#clearlog').click(function(){
     		$.ajax({
-		      url: '<?php echo isset($links['clearlog']) ? $links['clearlog']['link'] : '' ?>',
+		      url: '<?php echo isset($links['clearlog']) ? $links['clearlog'] : '' ?>',
 			  type: 'post',
 			  data: {clear : 'clear'},
 			  dataType: 'json',

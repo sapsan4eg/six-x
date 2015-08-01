@@ -2,11 +2,11 @@
 /**
  * Six-X
  *
- * An open source application development framework for PHP 5.3.0 or newer
+ * An open source application development framework for PHP 5.4.0 or newer
  *
  * @package		six-x
  * @author		Yuri Nasyrov <sapsan4eg@ya.ru>
- * @copyright	Copyright (c) 2014 - 2014, Yuri Nasyrov.
+ * @copyright	Copyright (c) 2014 - 2015, Yuri Nasyrov.
  * @license		http://six-x.org/guide/license.html
  * @link		http://six-x.org
  * @since		Version 1.0.0.0
@@ -42,7 +42,7 @@ class Conveyor extends Object
 			'SERVER_PROTOCOL' => isset($_SERVER['SERVER_PROTOCOL']) ? $_SERVER['SERVER_PROTOCOL'] : '', 
 			'REQUEST_METHOD' => isset($_SERVER['REQUEST_METHOD']) ? $_SERVER['REQUEST_METHOD'] : '', 
 			'QUERY_STRING' => isset($_SERVER['QUERY_STRING']) ? $_SERVER['QUERY_STRING'] : '');
-		Log::write(json_encode($array));
+		#Log::write(json_encode($array));
 
 		// instantiating Storage class
 		$this->_storage = new Storage();
@@ -57,19 +57,20 @@ class Conveyor extends Object
 		$this->join->library('session');
 		
 		// instantiating Db class and add to stroage   
-		$this->join->library('db');
+		$this->join->library('Six_x\Db');
 		
 		// instantiating Router class and add to stroage
 		$this->join->library('router', array($this->request->get, $this->db));
 		
-		// instantiating Mui class and add to stroage
-		$this->join->library('mui', array($this->db, $this->router->route['arguments'], $this->request->post,  $this->session, $this->request->cookie, $this->request->server));
-		
-		// check need autorization to applicatio
+		// instantiating Mui class
+        \Six_x\Mui::start($this->db, $this->router->route['arguments'], $this->request->post,  $this->session, $this->request->cookie, $this->request->server);
+        \Loader::load('translate', DIR_HELPER);
+
+		// check need autorization to application
    		if(defined('AUTORIZATION'))
    		{
    			// instantiating autorization class and add to stroage
-			$this->join->library(AUTORIZATION . '_autorization', array($this->router->route), 'autorization');
+			$this->join->library(AUTORIZATION . 'Autorization', array($this->router->route), 'autorization');
 		}
 		
 		// --------------------------------------------------------------------
@@ -94,7 +95,8 @@ class Conveyor extends Object
 		
 		// rendering
   		echo $return;
-	}}
+	}
+}
 
 /* End of file conveyor.php */
 /* Location: ./system/engine/conveyor.php */

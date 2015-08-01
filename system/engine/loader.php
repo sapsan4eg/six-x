@@ -2,11 +2,11 @@
 /**
  * Six-X
  *
- * An open source application development framework for PHP 5.3.0 or newer
+ * An open source application development framework for PHP 5.4.0 or newer
  *
  * @package		six-x
  * @author		Yuri Nasyrov <sapsan4eg@ya.ru>
- * @copyright	Copyright (c) 2014 - 2014, Yuri Nasyrov.
+ * @copyright	Copyright (c) 2014 - 2015, Yuri Nasyrov.
  * @license		http://six-x.org/guide/license.html
  * @link		http://six-x.org
  * @since		Version 1.0.0.0
@@ -66,7 +66,7 @@ class Loader
 	public static function autoload ($name)
 	{
 		// list of path
-		$list_dir = array(DIR_ENGINE, DIR_LIBRARY, DIR_START, DIR_MODELS);
+		$list_dir = array(DIR_ENGINE, DIR_LIBRARY, DIR_START, DIR_DATABASE, DIR_MODELS, DIR_CONTROLLERS);
         $name = explode('\\', strtolower($name));
 		// loop to path list
 		foreach($list_dir as $dir)

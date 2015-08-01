@@ -1,19 +1,17 @@
 <?php
-class Account_Login_model extends Object
-{
+class Account_Login_model extends Object {
 	public function get_main_valls()
 	{
 		$this->join->model('Main');
 		$this->MainModel->get_main_values();
-		$this->mui->load('Account/login');
-		$array = array('title' => $this->mui->get('heading_title'), 'text_local_account' => $this->mui->get('text_local_account'), 
-		'email' => $this->mui->get('entry_email'), 'password' => $this->mui->get('entry_password'),
-		'login' => $this->mui->get('text_login'), 'register' => $this->mui->get('text_register')
+		$array = array('title' => _('login.heading_title'), 'text_local_account' => _('text_local_account'),
+		'email' => _('entry_email'), 'password' => _('entry_password'),
+		'login' => _('text_login'), 'register' => _('text_register')
 		);
-		$fileLocalizationJqueryVall = DIR_SCRIPTS . 'localization/' . 'messages_' . $this->mui->get('code') . '.min.js'; 
+		$fileLocalizationJqueryVall = DIR_SCRIPTS . 'localization/' . 'messages_' . _('code') . '.min.js';
 		if (file_exists($fileLocalizationJqueryVall)) $array['localization_validate'] = '<script src="' . HTTP_SERVER . $fileLocalizationJqueryVall .'"></script>' . PHP_EOL;
 		$this->view->set(array_merge($this->view->get(), $array));
-		$this->view->links = array('mainlink' => array('link' => $this->router->Link('Index', 'Home', array('hello' => 'hi', 'id' => '2')), 'title' => $this->mui->get('text_home')));
+		$this->view->links = array('mainlink' => $this->router->Link('Index', 'Home', array('hello' => 'hi', 'id' => '2')));
 		if(isset($this->request->get['Came_From']))
 		{
 			$came = str_replace('amp;', '', str_replace('&amp;', '&', $this->request->get['Came_From']));
@@ -56,7 +54,7 @@ class Account_Login_model extends Object
 		 {
 		 	if(!isset($this->autorization->session->data['message']))
 		 	{
-				$this->view->message = array('warning', $this->mui->get('warning'), $this->mui->get('error_notfind_user'));
+				$this->view->message = array('warning', _('warning'), _('error_notfind_user'));
 			}
 			else
 			{

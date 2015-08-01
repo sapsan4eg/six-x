@@ -9,7 +9,7 @@
                 <label for="email">
 					<span class="required"><?php if(isset($email)){ echo $email;}?></span>
 				</label>
-				<input id="email" name="email" class="text required email input-medium" type="text">
+				<input id="email" name="email" autocomplete="off" class="text required email input-medium" type="text">
             </div>
             <div class="form-group">
             	<label for="password">

@@ -7,8 +7,8 @@
 | These modes are used when working with http
 |
 */
-define('HTTP_SERVER', 'http://mvc/');
-define('HTTP_IMAGE', 'http://mvc/image/');
+define('HTTP_SERVER', 'http://six/');
+define('HTTP_IMAGE', 'http://six/image/');
 
 /*
 |--------------------------------------------------------------------------
@@ -22,6 +22,7 @@ define('DIR_SYSTEM', '../system/');
 define('DIR_DATABASE', DIR_SYSTEM . 'database/');
 define('DIR_ENGINE', DIR_SYSTEM . 'engine/');
 define('DIR_LIBRARY', DIR_SYSTEM . 'library/');
+define('DIR_HELPER', DIR_SYSTEM . 'helper/');
 define('DIR_CONTENT', 'content/');
 define('DIR_CONTROLLERS', '../controllers/');
 define('DIR_MODELS', '../models/');

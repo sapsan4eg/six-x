@@ -1,6 +1,5 @@
 <?php
-class Story_Manipulation_model extends Object
-{
+class Story_Manipulation_model extends Object {
 	public function story($id = 0, $data = array())
 	{
 		$array = $this->_get_main();
@@ -43,58 +42,25 @@ class Story_Manipulation_model extends Object
 				$array['storys'][$key] = array_merge($array['storys'][$key], $temp[0]);
 				$errors = array_merge($errors, $temp[1]);
 				$text = "";				
-				// Check titles data
-			#	if( ! $this->validation->is_valid(isset($data['title'][$value['language_id']]) ? $data['title'][$value['language_id']] : NULL, 'clear_space|required|min_length[5]|max_length[200]'))
-			#	{
-			#		$errors[] = ' ' . $this->mui->get('title') . '[' . $value['language_id'] . '] (' . $this->validation->current_error . ');';
-			#	}
-			#	$array['storys'][$key]['title'] = isset($data['title'][$value['language_id']]) ? $data['title'][$value['language_id']] : "";
 				$text .= $array['storys'][$key]['title'] != urldecode($value['title']) ? "title='" . urlencode($array['storys'][$key]['title']) . "'," : "";
-				// Check text data
-			#	if( ! $this->validation->is_valid(isset($data['text'][$value['language_id']]) ? $data['text'][$value['language_id']] : NULL, 'clear_space|required'))
-			#	{
-			#		$errors[] = ' ' . $this->mui->get('text') . '[' . $value['language_id'] . '] (' . $this->validation->current_error . ');';
-			#	}
-			#	$array['storys'][$key]['text'] = isset($data['text'][$value['language_id']]) ? $data['text'][$value['language_id']] : "";
 				$text .= $array['storys'][$key]['text'] != urldecode($value['texts']) ? "texts='" . urlencode($array['storys'][$key]['text']) . "'," : "";
-				// Check meta_title data
-			#	if( ! $this->validation->is_valid(isset($data['meta_title'][$value['language_id']]) ? $data['meta_title'][$value['language_id']] : NULL, 'clear_space|not_null|max_length[200]'))
-			#	{
-			#		$errors[] = ' ' . $this->mui->get('meta_title') . '[' . $value['language_id'] . '] (' . $this->validation->current_error . ');';
-			#	}
-			#	$array['storys'][$key]['meta-title'] = isset($data['meta_title'][$value['language_id']]) ? $data['meta_title'][$value['language_id']] : "";
 				$text .= $array['storys'][$key]['meta-title'] != urldecode($value['meta_title']) ? "meta_title='" . urlencode($array['storys'][$key]['meta-title']) . "'," : "";
-				// Check meta_descr data
-			#	if( ! $this->validation->is_valid(isset($data['meta_descr'][$value['language_id']]) ? $data['meta_descr'][$value['language_id']] : NULL, 'clear_space|not_null|max_length[200]'))
-			#	{
-			#		$errors[] = ' ' . $this->mui->get('meta_descr') . '[' . $value['language_id'] . '] (' . $this->validation->current_error . ');';
-			#	}
-			#	$array['storys'][$key]['description'] = isset($data['meta_descr'][$value['language_id']]) ? $data['meta_descr'][$value['language_id']] : "";
 				$text .= $array['storys'][$key]['description'] != urldecode($value['meta_description']) ? "meta_description='" . urlencode($array['storys'][$key]['description']) . "'," : "";
-				// Check meta_key data
-			#	if( ! $this->validation->is_valid(isset($data['meta_key'][$value['language_id']]) ? $data['meta_key'][$value['language_id']] : NULL, 'clear_space|not_null|max_length[200]'))
-			#	{
-			#		$errors[] = ' ' . $this->mui->get('meta_key') . '[' . $value['language_id'] . '] (' . $this->validation->current_error . ');';
-			#	}
-			#	$array['storys'][$key]['key'] = isset($data['meta_key'][$value['language_id']]) ? $data['meta_key'][$value['language_id']] : "";
 				$text .= $array['storys'][$key]['key'] != urldecode($value['meta_keyword']) ? "meta_keyword='" . urlencode($array['storys'][$key]['key']) . "'," : "";
 				if(isset($data['options']))
-				{
-					$value['status'] = $data['options'] == 'on' ? 1 : 0;
-				}
+                    $value['status'] = $data['options'] == 'on' ? 1 : 0;
  				if(strlen($text) > 3)
- 				{
- 					$update[] = "UPDATE IGNORE `" . DB_PREFIX . "story_text` SET ". substr($text, 0, strlen($text) - 1) . " WHERE `language_id` = " . $value['language_id'] . " AND story_id = " . $id;
- 				}
+                    $update[] = "UPDATE IGNORE `" . DB_PREFIX . "story_text`
+                                    SET ". substr($text, 0, strlen($text) - 1) . "
+                                    WHERE `language_id` = " . $value['language_id'] . "
+                                    AND story_id = " . $id;
 			}
-			if( ! isset($array['active'])) 
-			{
-				$value['status'] == 1 ? $array['active'] = 'on' : $array['active'] = 'off';
-			}
+			if( ! isset($array['active']))
+                $value['status'] == 1 ? $array['active'] = 'on' : $array['active'] = 'off';
+
 			if($value['status'] != $status)
-			{
-				$update[] = "UPDATE IGNORE `" . DB_PREFIX . "story` SET `status` = " . $value['status'] . " WHERE story_id = " . $id;
-			}
+                $update[] = "UPDATE IGNORE `" . DB_PREFIX . "story` SET `status` = " . $value['status'] . " WHERE story_id = " . $id;
+
 			$array['summers'] .= '#text_story_' . $value['language_id'] . ', ';
 		}
 		
@@ -103,7 +69,7 @@ class Story_Manipulation_model extends Object
 
 		if (count($errors) > 0)
 		{
-			$array['message'] = array('warning', $this->mui->get('warning'), '');
+			$array['message'] = array('warning', _('warning'), '');
 			foreach ($errors As $value) 
 			{
 				$array['message'][2] .= $value;
@@ -111,12 +77,12 @@ class Story_Manipulation_model extends Object
 		}
 		elseif (count($update) > 0)
 		{
-			$errormessage = "";
+			$errormessage = '';
 			foreach ($update As $value)
 			{
-				if( ! $this->db->query($value))
+				if( ! $this->db->query($value, TRUE))
 				{
-					$errormessage .= $this->mui->get('error_update') . " (" . $value . ")";
+					$errormessage .= _('error_update') . " (" . $value . ")";
 					Log::write("Error update " . $this->autorization->Identity['id'] . " (" . $value . ")");
 				} 
 				else 
@@ -124,14 +90,14 @@ class Story_Manipulation_model extends Object
 					Log::write("Succes update " . $this->autorization->Identity['id'] . " (" . $value . ")");
 				}
 			}
-			$this->db->query("UPDATE `" . DB_PREFIX . "story` SET date_update = '" . date("Y-m-d H:i:s") ."' WHERE story_id = " . $id);
+			$this->db->query("UPDATE `" . DB_PREFIX . "story` SET date_update = '" . date("Y-m-d H:i:s") ."' WHERE story_id = " . $id, TRUE);
 			if(strlen($errormessage) == 0)
 			{
-				$array['message'] = array('success', $this->mui->get('success'), $this->mui->get('success_update'));
+				$array['message'] = array('success', _('success'), _('success_update'));
 			}
 			else 
 			{
-				$array['message'] = array('warning', $this->mui->get('warning'), $errormessage);
+				$array['message'] = array('warning', _('warning'), $errormessage);
 			}
 		}
 		return $array;
@@ -144,19 +110,19 @@ class Story_Manipulation_model extends Object
 						FROM `" . DB_PREFIX . "story` s 
 						LEFT JOIN `" . DB_PREFIX . "story_text` t ON (s.story_id = t.story_id) 
 						LEFT JOIN `" . DB_PREFIX . "language` l USING (language_id) 
-						WHERE l.lang = '" . $this->mui->get_lang() . "'
+						WHERE l.lang = '" . Six_x\Mui::get_lang() . "'
 						ORDER BY l.sort_order LIMIT " . (int)$start . "," . (int)$limit;
 
 		$query = $this->db->query($text_query);	
 		$array['storys'] = $query->count > 0 ? $query->list : array();
 		$array['link_edit'] = $this->router->link('Edit');
 		$array['link_create'] = $this->router->link('Create');
-		$array['delete'] = $this->mui->get("button_delete");
-		$array['permanently'] = $this->mui->get("message_permanently");
-		$array['close'] = $this->mui->get("button_close");
-		$array['submit'] = $this->mui->get("button_submit");
-		$array['create'] = $this->mui->get("button_create");
-		$array['edit'] = $this->mui->get("button_edit");
+		$array['delete'] = _("button_delete");
+		$array['permanently'] = _("message_permanently");
+		$array['close'] = _("button_close");
+		$array['submit'] = _("button_submit");
+		$array['create'] = _("button_create");
+		$array['edit'] = _("button_edit");
 		
 		return $array;
 	}
@@ -164,36 +130,35 @@ class Story_Manipulation_model extends Object
 	{
 		$this->join->model('Main');
 		$this->MainModel->get_main_values();
-		$this->mui->load('Story/Edit');
 		
 		$array = array(
-			'title'			=> $this->mui->get('text_edit'), 
-			'title_text'	=> $this->mui->get('entry_title'),
-			'text_body'		=> $this->mui->get('entry_description'), 
-			'meta_title'	=> $this->mui->get('entry_meta_title'),
-			'meta_descr'	=> $this->mui->get('entry_meta_description'),
-			'meta_key'		=> $this->mui->get('entry_keyword'),
+			'title'			=> _('story.text_edit'),
+			'title_text'	=> _('story.entry_title'),
+			'text_body'		=> _('story.entry_description'),
+			'meta_title'	=> _('story.entry_meta_title'),
+			'meta_descr'	=> _('story.entry_meta_description'),
+			'meta_key'		=> _('story.entry_keyword'),
 			'language'		=> array(
-					'locale'	=> $this->mui->get_lang(), 
-					'name'		=> $this->mui->get_name()
+					'locale'	=> Six_x\Mui::get_lang(),
+					'name'		=> Six_x\Mui::get_name()
 					)
 			);
 					
-		$file_localization = DIR_SCRIPTS . 'localization/' . 'summernote-' . $this->mui->get_lang() . '.js';
+		$file_localization = DIR_SCRIPTS . 'localization/' . 'summernote-' . Six_x\Mui::get_lang() . '.js';
 		
 		if (file_exists($file_localization))
 		{
 			$array =array_merge($array, array(
-				'localization_summer' => '<script src="' . HTTP_SERVER . $file_localization .'"></script>' . PHP_EOL, 'lang_summer' => $this->mui->get_lang()
+				'localization_summer' => '<script src="' . HTTP_SERVER . $file_localization .'"></script>' . PHP_EOL, 'lang_summer' => Six_x\Mui::get_lang()
 				)
 			);
 		}
 		
 		$array['buttons'] = array(
-			'cancel'	=> $this->mui->get('button_cancel'), 
-			'save'		=> $this->mui->get('button_save'),
-			'on'		=> $this->mui->get('button_on'),
-			'off'		=> $this->mui->get('button_off')
+			'cancel'	=> _('button_cancel'),
+			'save'		=> _('button_save'),
+			'on'		=> _('button_on'),
+			'off'		=> _('button_off')
 		);
 			
 		return $array;
@@ -241,7 +206,7 @@ class Story_Manipulation_model extends Object
 		
 		if (count($errors) > 0)
 		{
-			$array['message'] = array('warning', $this->mui->get('warning'), '');
+			$array['message'] = array('warning', _('warning'), '');
 			foreach ($errors As $value) 
 			{
 				$array['message'][2] .= $value;
@@ -258,9 +223,9 @@ class Story_Manipulation_model extends Object
 			$max = "INSERT INTO `" . DB_PREFIX . "story` (`sort_order`, status, date_create, date_update)
 					SELECT MAX(s.sort_order) + 1 sort_order, " . $status . " status, '" . date("Y-m-d H:i:s") . "' date_create, '" . date("Y-m-d H:i:s") . "' date_update 
 					FROM story s";
-			if( ! $this->db->query($max))
+			if( ! $this->db->query($max, TRUE))
 			{
-				$errormessage .= $this->mui->get('error_create') . " (" . $max . ")";
+				$errormessage .= _('error_create') . " (" . $max . ")";
 				Log::write("Error create " . $this->autorization->Identity['id'] . " (" . $max . ")");
 			} 
 			else 
@@ -279,9 +244,9 @@ class Story_Manipulation_model extends Object
 						'" . urlencode($value['key']) . "' meta_keyword
 						FROM `language` WHERE `lang` = '" . $value['locale'] . "'";
 						
-					if( ! $this->db->query($text_query))
+					if( ! $this->db->query($text_query, TRUE))
 					{
-						$errormessage .= $this->mui->get('error_create') . " (" . $text_query . ")";
+						$errormessage .= _('error_create') . " (" . $text_query . ")";
 						Log::write("Create error ". $this->autorization->Identity['id'] . " (" . $text_query . ")");
 					} 
 					else 
@@ -293,12 +258,12 @@ class Story_Manipulation_model extends Object
 
 			if(strlen($errormessage) == 0)
 			{
-				$this->session->data['message'] = array('success', $this->mui->get('success'), $this->mui->get('success_create'));
+				$this->session->data['message'] = array('success', _('success'), _('success_create'));
 				$this->view->RedirectToAction('Edit', 'Story', array('story' => $id));
 			}
 			else 
 			{
-				$array['message'] = array('warning', $this->mui->get('warning'), $errormessage);
+				$array['message'] = array('warning', _('warning'), $errormessage);
 			}
 		}
 		$array['summers'] = substr($array['summers'], 0, strlen($array['summers']) -2);
@@ -307,48 +272,67 @@ class Story_Manipulation_model extends Object
 		
 		return $array;
 	}
+
+    // --------------------------------------------------------------------
+
+    /**
+     * Validate data from request
+     *
+     * @param	array
+     * @param	int
+     * @return	array
+     */
 	protected function _checkData($data, $id)
 	{
-		$array = array();
-		$errors = array();
+		$array = [];
+		$errors = [];
 		// Check titles data
 		if( ! $this->validation->is_valid(isset($data['title'][$id]) ? $data['title'][$id] : NULL, 'clear_space|required|min_length[5]|max_length[200]'))
 		{
-			$errors[] = ' ' . $this->mui->get('title') . '[' . $id . '] (' . $this->validation->current_error . ');';
+			$errors[] = ' ' . _('title') . '[' . $id . '] (' . $this->validation->current_error . ');';
 		}
 		$array['title'] = isset($data['title'][$id]) ? $data['title'][$id] : "";
 
 		// Check text data
 		if( ! $this->validation->is_valid(isset($data['text'][$id]) ? $data['text'][$id] : NULL, 'clear_space|required'))
 		{
-			$errors[] = ' ' . $this->mui->get('text') . '[' . $id . '] (' . $this->validation->current_error . ');';
+			$errors[] = ' ' . _('text') . '[' . $id . '] (' . $this->validation->current_error . ');';
 		}
 		$array['text'] = isset($data['text'][$id]) ? $data['text'][$id] : "";
 
 		// Check meta_title data
 		if( ! $this->validation->is_valid(isset($data['meta_title'][$id]) ? $data['meta_title'][$id] : NULL, 'clear_space|not_null|max_length[200]'))
 		{
-			$errors[] = ' ' . $this->mui->get('meta_title') . '[' . $id . '] (' . $this->validation->current_error . ');';
+			$errors[] = ' ' . _('meta_title') . '[' . $id . '] (' . $this->validation->current_error . ');';
 		}
 		$array['meta-title'] = isset($data['meta_title'][$id]) ? $data['meta_title'][$id] : "";
 
 		// Check meta_descr data
 		if( ! $this->validation->is_valid(isset($data['meta_descr'][$id]) ? $data['meta_descr'][$id] : NULL, 'clear_space|not_null|max_length[200]'))
 		{
-			$errors[] = ' ' . $this->mui->get('meta_descr') . '[' . $id . '] (' . $this->validation->current_error . ');';
+			$errors[] = ' ' . _('meta_descr') . '[' . $id . '] (' . $this->validation->current_error . ');';
 		}
 		$array['description'] = isset($data['meta_descr'][$id]) ? $data['meta_descr'][$id] : "";
 
 		// Check meta_key data
 		if( ! $this->validation->is_valid(isset($data['meta_key'][$id]) ? $data['meta_key'][$id] : NULL, 'clear_space|not_null|max_length[200]'))
 		{
-			$errors[] = ' ' . $this->mui->get('meta_key') . '[' . $id . '] (' . $this->validation->current_error . ');';
+			$errors[] = ' ' . _('meta_key') . '[' . $id . '] (' . $this->validation->current_error . ');';
 		}
 		$array['key'] = isset($data['meta_key'][$id]) ? $data['meta_key'][$id] : "";
 		
-		return array($array, $errors);	
+		return [$array, $errors];
 	}
-	public function delete_storys($array = array())
+
+    // --------------------------------------------------------------------
+
+    /**
+     * Delete story from db
+     *
+     * @param	array
+     * @return	array
+     */
+	public function delete_storys($array = [])
 	{
 		$text_query = "";
 		
@@ -360,17 +344,16 @@ class Story_Manipulation_model extends Object
 		if(strlen($text_query) > 0)
 		{
 			$text_query = "DELETE FROM `" . DB_PREFIX . "story` WHERE `story_id` IN (".substr($text_query, 0, strlen($text_query) - 1) . ")";
-			if( ! $this->db->query($text_query))
+			if( ! $this->db->query($text_query, TRUE))
 			{
-				$errormessage .= $this->mui->get('error_delete') . " (" . $text_query . ")";
 				Log::write("Delete error: ". $this->autorization->Identity['id'] . " (" . $text_query . ")");
 				
-				$array['message'] = array('warning', $this->mui->get('warning'), $this->mui->get('error_delete'));
+				$array['message'] = array('warning', _('warning'), _('error_delete'));
 			}
 			else 
 			{
 				Log::write("Succes delete " . $this->autorization->Identity['id'] . " (" . $text_query . ")");
-				$array['message'] = array('success', $this->mui->get('success'), $this->mui->get('success_delete'));
+				$array['message'] = array('success', _('success'), _('success_delete'));
 			}
 		}
 		return $array;
