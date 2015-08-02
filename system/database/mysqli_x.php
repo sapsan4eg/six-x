@@ -87,7 +87,6 @@ final class Mysqli_x {
         if($writeble === FALSE && $this->_is_writeble($query))
         {
             throw new ErrorException('Error: corrupted sql. Error No: 666' . $query);
-            return;
         }
 		$result = $this->sql->query($query);
 
@@ -122,7 +121,6 @@ final class Mysqli_x {
 		else
 		{
 			throw new ErrorException('Error: ' . $this->sql->error . '<br />Error No: ' . $this->sql->errno . '<br />' . $query);
-			exit();
 		}
 	}
 
@@ -178,7 +176,7 @@ final class Mysqli_x {
     /**
      * Determines if a query is a "write" type.
      *
-     * @param	string	An SQL query string
+     * @param	string
      * @return	bool
      */
     protected function _is_writeble ($sql)

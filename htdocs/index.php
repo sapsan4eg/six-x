@@ -3,7 +3,7 @@
  * six-x Version
  * @var string
  */
-	define('VERSION', '0.6.0.6');
+	define('VERSION', '0.6.0.8');
 /**
  * six-x Error display (Display on browser and write on log file = all, Display only on browser = monitor, Only write on log file = log)
  * @var string
@@ -23,7 +23,7 @@
  * ------------------------------------------------------
  */
  	set_error_handler('error_handler');
-	
+    set_exception_handler('exception_handler');
 /**
 * Error Handler
 * This function lets us invoke the exception class and
@@ -55,8 +55,34 @@
 				break;
 		}
 		writeError($error, $message, $file, $line);
-	}	
-	
+	}
+/**
+ * Write exception on display or log file
+ * This function lets us invoke the exception class and
+ * display errors using the standard error template located
+ * This function will send the error page directly to the
+ * browser and exit.
+ *
+ * @access	public
+ * @return	void
+ */
+    function exception_handler(\Exception $exception)
+    {
+        if(defined('ERR_DISPLAY'))
+        {
+            if(ERR_DISPLAY == 'all' || ERR_DISPLAY == 'monitor')
+            {
+                echo '<i><b>ERROR</b>: ' .  $exception->getMessage() . ' in <b>"' . $exception->getFile() . '"</b> trace <b>"' . $exception->getTraceAsString() . '</b>"</i><br />';
+            }
+            if(ERR_DISPLAY == 'all' || ERR_DISPLAY == 'log')
+            {
+                if(class_exists('Log'))
+                {
+                    Log::exception($exception);
+                }
+            }
+        }
+    }
 /**
 * Write error on display or log file
 * This function lets us invoke the exception class and
@@ -79,7 +105,7 @@
 			{
 			    if(class_exists('Log'))
 			    {
-			    	Log::write('PHP ' . $error . ':  ' . $message . ' in ' . $file . ' on line ' . $line);
+			    	Log::error($error, $message, $file, $line);
 			    }
 			}
 		}
@@ -102,5 +128,6 @@
  * ------------------------------------------------------
  */
 	$conveyor = new Conveyor();
+
 /* End of file index.php */
 /* Location: ./index.php */
