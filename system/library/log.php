@@ -96,6 +96,15 @@ class Log
         $exception["FILE"] = $e->getFile();
         self::_write(json_encode($exception));
     }
+
+    // --------------------------------------------------------------------
+
+    /**
+     * getting stat
+     *
+     * @access	protected
+     * @return	array
+     */
     protected static function _getStat()
     {
         $time = time();
