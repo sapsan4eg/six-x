@@ -15,7 +15,26 @@
 
 // ------------------------------------------------------------------------
 
+/**
+ * Translate label
+ *
+ * @param $label
+ * @return string
+ */
 function _($label)
 {
     return \Six_x\Mui::get($label);
+}
+
+/**
+ * Validate date format
+ *
+ * @param $date
+ * @param string $format
+ * @return bool
+ */
+function validateDate($date, $format = 'Y-m-d H:i:s')
+{
+    $d = DateTime::createFromFormat($format, $date);
+    return $d && $d->format($format) == $date;
 }

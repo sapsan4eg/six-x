@@ -98,7 +98,7 @@ class SimplyAutorization extends Object {
 
 	public function Login($username = '', $password = '')
 	{
-		Log::write(json_encode(array('action'=> 'try enter', 'user' => $username, 'password' => $password)));
+		Log::write(json_encode(array('action'=> 'try enter', 'user' => $username, 'password' => Six_x\Protecter::escape($password))));
 		
 		$query = $this->db->query("SELECT * FROM `" . DB_PREFIX . "users` 
 									WHERE LOWER(`logon_name`) = '" . strtolower($this->db->escape($username)) . "' 

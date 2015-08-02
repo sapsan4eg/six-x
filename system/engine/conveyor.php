@@ -31,19 +31,6 @@ class Conveyor extends Object
 	 */
 	public function __construct()
 	{
-		$array = array(
-			'HTTP_USER_AGENT' => isset($_SERVER['HTTP_USER_AGENT']) ? $_SERVER['HTTP_USER_AGENT'] : '', 
-			'HTTP_REFERER' => isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : '', 
-			'HTTP_ACCEPT_ENCODING' => isset($_SERVER['HTTP_ACCEPT_ENCODING']) ? $_SERVER['HTTP_ACCEPT_ENCODING'] : '', 
-			'HTTP_ACCEPT_LANGUAGE' => isset($_SERVER['HTTP_ACCEPT_LANGUAGE']) ? $_SERVER['HTTP_ACCEPT_LANGUAGE'] : '', 
-			'REMOTE_ADDR' => isset($_SERVER['REMOTE_ADDR']) ? $_SERVER['REMOTE_ADDR'] : '', 
-			'REQUEST_SCHEME' => isset($_SERVER['REQUEST_SCHEME']) ? $_SERVER['REQUEST_SCHEME'] : '', 
-			'REMOTE_PORT' => isset($_SERVER['REMOTE_PORT']) ? $_SERVER['REMOTE_PORT'] : '', 
-			'SERVER_PROTOCOL' => isset($_SERVER['SERVER_PROTOCOL']) ? $_SERVER['SERVER_PROTOCOL'] : '', 
-			'REQUEST_METHOD' => isset($_SERVER['REQUEST_METHOD']) ? $_SERVER['REQUEST_METHOD'] : '', 
-			'QUERY_STRING' => isset($_SERVER['QUERY_STRING']) ? $_SERVER['QUERY_STRING'] : '');
-		#Log::write(json_encode($array));
-
 		// instantiating Storage class
 		$this->_storage = new Storage();
 		
@@ -64,7 +51,9 @@ class Conveyor extends Object
 		
 		// instantiating Mui class
         \Six_x\Mui::start($this->db, $this->router->route['arguments'], $this->request->post,  $this->session, $this->request->cookie, $this->request->server);
-        \Loader::load('translate', DIR_HELPER);
+
+        // usefull functions
+        \Loader::load('usefull', DIR_HELPER);
 
 		// check need autorization to application
    		if(defined('AUTORIZATION'))
@@ -72,7 +61,7 @@ class Conveyor extends Object
    			// instantiating autorization class and add to stroage
 			$this->join->library(AUTORIZATION . 'Autorization', array($this->router->route), 'autorization');
 		}
-		
+
 		// --------------------------------------------------------------------
 
 		// get main parametrs

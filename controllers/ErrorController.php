@@ -20,17 +20,34 @@ class ErrorController extends Controller
 	{
 		$this->join->model('Main');
 		$this->MainModel->get_main_values();
-		$this->view->log	= Log::Get_text();
+        $path = defined('DIR_ERRORS') ? DIR_ERRORS : DIR_SYSTEM . 'logs/';
+        $file = new Six_x\File($path);
+        $array = $file->toArray();
+        arsort($array);
+        $newarray = [];
+        foreach($array As $value)
+        {
+            if(strpos($value, '.log') !== FALSE)
+                $newarray[] = substr($value, 0, strpos($value, '.log'));
+        }
+        $this->view->listlogs = $newarray;
+
+        if(isset($this->request->get['logfile']) && validateDate($this->request->get['logfile'], "Y-m-d"))
+            $this->view->logfile = $this->request->get['logfile'];
+        else
+            $this->view->logfile = count($newarray) > 0 ? $newarray[0] : date("Y-m-d");
+
+		$this->view->log	= Log::GetText($this->view->logfile);
 		$this->view->links	= array('mainlink' => $this->router->Link('Index', 'Home'),
-									'clearlog' => $this->router->Link('ErrorLogClear', 'Error')
+									'clearlog' => $this->router->Link('ErrorLogClear', 'Error', array("logfile" => $this->view->logfile))
 		);	
 		return $this->view->ViewResult('Log');
 	}
 	public function ErrorLogClear()
 	{
-		if(isset($this->request->post['clear']))
+		if(isset($this->request->post['clear']) && isset($this->request->get['logfile']) && validateDate($this->request->get['logfile'], "Y-m-d"))
 		{
-			return $this->view->JsonResult(array('answer' => Log::Clear_log() ? 'success' : 'fail'));
+			return $this->view->JsonResult(array('answer' => Log::ClearLog($this->request->get['logfile']) ? 'success' : 'fail'));
 		}
 		return $this->view->JsonResult(array('answer' => 'fail'));
 	}

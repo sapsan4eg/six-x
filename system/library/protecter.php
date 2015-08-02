@@ -629,6 +629,20 @@ Class Protecter
         // encode captured opening or closing brace to prevent recursive vectors:
         .str_replace(array('>', '<'), array('&gt;', '&lt;'), $matches[4]);
     }
+
+    // --------------------------------------------------------------------
+
+    /**
+     * Hiding all sibols to ?
+     *
+     *
+     * @param	string	$string
+     * @return	string
+     */
+    public static function escape($string)
+    {
+        return str_repeat("?", strlen($string));
+    }
 }
 
 /* End of file protecter.php */

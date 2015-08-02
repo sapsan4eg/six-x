@@ -138,9 +138,9 @@ class Log
 	 * @access	protected
 	 * @return	string
 	 */
-	protected static function _file_name()
+	protected static function _file_name($name = NULL)
 	{
-		return (defined('DIR_ERRORS') ? DIR_ERRORS : DIR_SYSTEM . 'logs/') . date("Y-m-d") . '.log';
+		return (defined('DIR_ERRORS') ? DIR_ERRORS : DIR_SYSTEM . 'logs/') . ($name === NULL ?  date("Y-m-d") : $name) . '.log';
 	}
 
 	// --------------------------------------------------------------------
@@ -151,9 +151,9 @@ class Log
 	 * @access	public
 	 * @return	string
 	 */
-	public static function Get_text()
+	public static function GetText($name = NULL)
 	{
-		return file_exists(self::_file_name()) ? file_get_contents(self::_file_name(), FILE_USE_INCLUDE_PATH, NULL) : '';
+		return file_exists(self::_file_name($name)) ? file_get_contents(self::_file_name($name), FILE_USE_INCLUDE_PATH, NULL) : '';
 	}
 	
 	// --------------------------------------------------------------------
@@ -164,9 +164,9 @@ class Log
 	 * @access	public
 	 * @return	bool
 	 */
-	public static function Clear_log()
+	public static function ClearLog($name = NULL)
 	{
-		return file_exists(self::_file_name()) ? unlink(self::_file_name()) : TRUE;
+		return file_exists(self::_file_name($name)) ? unlink(self::_file_name($name)) : TRUE;
 	}
 }
 

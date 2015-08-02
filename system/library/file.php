@@ -77,7 +77,7 @@ class File extends Arrays
      */
     protected function _array()
     {
-        $this->_reala_array = $this->_array = scandir($this::$_path);
+        $this->_real_array = $this->_array = scandir($this::$_path);
     }
 
     // --------------------------------------------------------------------
