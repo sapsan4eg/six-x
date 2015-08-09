@@ -20,10 +20,10 @@ namespace Six_x;
  * Zipped class
  *
  * @package		six-x
- * @subpackage	database
- * @category	Database
+ * @subpackage	zip
+ * @category	Zip
  * @author		Yuri Nasyrov <sapsan4eg@ya.ru>
- * @link		http://six-x.org/guide/database/
+ * @link		http://six-x.org/guide/zip/
  */
 class Zip {
 

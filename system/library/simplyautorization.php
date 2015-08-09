@@ -15,33 +15,72 @@
 
 // ------------------------------------------------------------------------
 
+/**
+ * Autorization class
+ *
+ * @package		six-x
+ * @subpackage	autorization
+ * @category	Autorization
+ * @author		Yuri Nasyrov <sapsan4eg@ya.ru>
+ * @link		http://six-x.org/guide/autorization/
+ */
 class SimplyAutorization extends Object {
+
+    /**
+     * Autorization data
+     *
+     * @var array
+     */
 	public $Identity = array(
 		'IsAuthenticated' => NULL, 
 		'Name' => NULL, 
 		'Email' => NULL, 
 		'id' => NULL
 		);
+
+    // --------------------------------------------------------------------
+
+    /**
+     * Constructor
+     *
+     * @param	object  $storage
+     * @param   array   $route
+     */
 	public function __construct($storage, $route)
 	{
 		$this->_storage = $storage;
-		$this->CheckAccess($route);
+		$this->_checkAccess($route);
 	}
-	public function CheckAccess($route)
+
+    // --------------------------------------------------------------------
+
+    /**
+     * Checking access to part of system
+     *
+     * @access  protected
+     * @param	array	$route
+     * @return	void
+     */
+	protected function _checkAccess($route)
 	{
 		$havePermission = TRUE;
 		$user_id = 0;
 
 		if(isset($this->session->data['user']) && isset($this->session->data['user_id']))
 		{
+            // Select user in DB
 			$query = $this->db->query("SELECT * FROM `" . DB_PREFIX . "users` 
 								WHERE `user_id` = '" . (int)$this->session->data['user_id'] . "' 
-								AND LOWER(`logon_name`) = '" . strtolower($this->db->escape($this->session->data['user'])) . "' 
+								AND LOWER(`logon_name`) = '" . strtolower($this->db->escape(\Six_x\Protecter::injection_clear($this->session->data['user']))) . "'
 								AND `status` = '1'");
+
 			if($query->count == 1)
 			{
+                $authenticated = TRUE;
+
 				if(defined('AUTORIZATION_MULTILOGON'))
 				{
+                    // If user can logon only from 1 device
 					if(AUTORIZATION_MULTILOGON == 'false')
 					{
 						if(session_id() == $query->first['session_id'])
@@ -54,28 +93,31 @@ class SimplyAutorization extends Object {
 						{
 							$this->session->data['message'] = array('warning',_('warning'), _('error_another_logged'));
 							$this->Logout(FALSE);
-							return FALSE;
+                            $authenticated = FALSE;
 						}
 					}
 				}
 
-				$this->Identity['IsAuthenticated'] = TRUE;
-				$this->Identity['Name'] = $query->first['logon_name'];
-				$this->Identity['id'] = $query->first['user_id'];
-				$user_id = $query->first['user_id'];
+                if($authenticated)
+                {
+                    $this->Identity['IsAuthenticated'] = TRUE;
+                    $this->Identity['Name'] = $query->first['logon_name'];
+                    $this->Identity['id'] = $query->first['user_id'];
+                    $user_id = $query->first['user_id'];
+                }
 			}
 			else
 			{
 				$this->Logout();
 			}
 		}
+        // Check have to any permission on controller
 		$query = $this->db->query("SELECT * FROM `" . DB_PREFIX . "permissions` 
 								WHERE `controller_name` = '" . $route['controller'] . "'");
 
 		if($query->count == 1)
 		{
-
-			$havePermission = $this->HavePermission(unserialize($query->first['permission']), $route, $user_id);
+			$havePermission = $this->_havePermission(unserialize($query->first['permission']), $route, $user_id);
 		}
 
 		if($havePermission == FALSE)
@@ -96,30 +138,38 @@ class SimplyAutorization extends Object {
 		}
 	}
 
+    // --------------------------------------------------------------------
+
+    /**
+     * Try sign in system
+     *
+     * @access  public
+     * @param	string	$username
+     * @param   string  $password
+     * @return	bool
+     */
 	public function Login($username = '', $password = '')
 	{
 		Log::write(json_encode(array('action'=> 'try enter', 'user' => $username, 'password' => Six_x\Protecter::escape($password))));
 		
 		$query = $this->db->query("SELECT * FROM `" . DB_PREFIX . "users` 
-									WHERE LOWER(`logon_name`) = '" . strtolower($this->db->escape($username)) . "' 
-									AND  `password` = '" . $this->db->escape(md5($password)) . "' 
+									WHERE LOWER(`logon_name`) = '" . strtolower($this->db->escape(\Six_x\Protecter::injection_clear($username))) . "'
+									AND  `password` = '" . md5($password) . "'
 									AND `status` = '1'");
 
 		if($query->count == 1)
 		{
-
 			if(defined('AUTORIZATION_MULTILOGON'))
 			{
-
+                // If user can logon only from 1 device
 				if(AUTORIZATION_MULTILOGON == 'false')
 				{
-
 					if(strlen($query->first['session_id']) > 0)
 					{
 						if(session_id() != $query->first['session_id'])
 						{
-							$razn = strtotime(date("Y-m-d H:i:s")) - strtotime($query->first['session_time']);
-							if($razn < 1200)
+							$diff = strtotime(date("Y-m-d H:i:s")) - strtotime($query->first['session_time']);
+							if($diff < 1200)
 							{
 								$this->session->data['message'] = array('warning',_('warning'), _('error_another_logged'));
 								return FALSE;
@@ -130,7 +180,6 @@ class SimplyAutorization extends Object {
 					$this->db->query("UPDATE `" . DB_PREFIX . "users` 
 										SET `session_id`='" . session_id() . "' 
 										WHERE `user_id`=" . $query->first['user_id'], TRUE);
-
 				}
 			}
 			$this->session->data['user'] 	= $query->first['logon_name'];
@@ -138,15 +187,22 @@ class SimplyAutorization extends Object {
 
 			Log::write(json_encode(array('action'=> 'success enter', 'user' => $username)));
 			return TRUE;
-
 		}
-
 		return FALSE;
 	}
 
+    // --------------------------------------------------------------------
+
+    /**
+     * Log out from system
+     *
+     * @access  public
+     * @param	bool	$change
+     * @return	void
+     */
 	public function Logout($change = TRUE)
 	{
-		Log::write(json_encode(array('action'=> 'logout', 'user' => isset($this->session->data['user']) ? $this->session->data['user'] : 'not anderstand')));
+		Log::write(json_encode(array('action'=> 'logout', 'user' => isset($this->session->data['user']) ? $this->session->data['user'] : 'not understand')));
 		if(defined('AUTORIZATION_MULTILOGON') & isset($this->session->data['user_id']) & isset($this->session->data['user']))
 		{
 			if(AUTORIZATION_MULTILOGON == 'false' & $change == TRUE)
@@ -166,7 +222,6 @@ class SimplyAutorization extends Object {
 			}
 		}
 
-
 		if(isset($this->session->data['user']))
 		{
 			unset($this->session->data['user']);
@@ -176,12 +231,21 @@ class SimplyAutorization extends Object {
 		{
 			unset($this->session->data['user_id']);
 		}
-
 	}
 
-	private function HavePermission($permissionArray, $route, $user_id)
-	{
+    // --------------------------------------------------------------------
 
+    /**
+     * Check have user permission
+     *
+     * @access  protected
+     * @param	array	$permissionArray
+     * @param   array   $route
+     * @param   int     $user_id
+     * @return	bool
+     */
+	protected function _havePermission($permissionArray, $route, $user_id)
+	{
 		$permission = FALSE;
 		$checkPermissionOnController = TRUE;
 
@@ -189,7 +253,7 @@ class SimplyAutorization extends Object {
 		{
 			if(isset($permissionArray['actions'][$route['action']]))
 			{
-				$permission = $this->ComparisonPermissions ($permissionArray['actions'][$route['action']], $user_id);
+				$permission = $this->_comparisonPermissions ($permissionArray['actions'][$route['action']], $user_id);
 				$checkPermissionOnController = FALSE;
 			}
 
@@ -199,7 +263,7 @@ class SimplyAutorization extends Object {
 		{
 			if($checkPermissionOnController == TRUE)
 			{
-				$permission = $this->ComparisonPermissions ($permissionArray['controller'], $user_id);
+				$permission = $this->_comparisonPermissions ($permissionArray['controller'], $user_id);
 			}
 			else
 			{
@@ -215,7 +279,17 @@ class SimplyAutorization extends Object {
 		return $permission;
 	}
 
-	private function ComparisonPermissions ($permissions, $user_id)
+    // --------------------------------------------------------------------
+
+    /**
+     * Check comparison user permission
+     *
+     * @access  protected
+     * @param	array	$permissions
+     * @param   int     $user_id
+     * @return	bool
+     */
+    protected function _comparisonPermissions ($permissions, $user_id)
 	{
 		$permission = TRUE;
 

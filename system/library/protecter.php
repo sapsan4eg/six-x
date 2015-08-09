@@ -649,7 +649,6 @@ Class Protecter
     /**
      * Clening all injections
      *
-     *
      * @param	string	$string
      * @return	string
      */
@@ -671,8 +670,7 @@ Class Protecter
     // --------------------------------------------------------------------
 
     /**
-     * Clening all injections
-     *
+     * Cleaning upper path in filename
      *
      * @param	string	$string
      * @return	string
