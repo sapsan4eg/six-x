@@ -194,8 +194,7 @@ final class View {
 		}
 		else
 		{
-			trigger_error('Error: Could not load view ' . $file . '!');
-			exit();
+            throw new Exception('Error: Could not load view ' . $file . '!');
 		}
 	}
 
@@ -267,41 +266,68 @@ final class View {
 	 * @param	string
 	 * @param	string
 	 */
-	public function FileResult($file = '', $filename = '')
+	public function FileResult($file = '', $filename = '', $type = NULL)
 	{
+
 		// check exist file
-		if (file_exists($file))
+		if (empty($type))
 		{
-			// check what name is the output file
-			if(strlen($filename) == 0)
-			{
-				$filename = basename($file);
-			}
-			else
-			{
-				$filename .= '.' . substr(strrchr($file, '.'), 1);
-			}
+            if( file_exists($file)) {
+                // check what name is the output file
+                if (strlen($filename) == 0) {
+                    $filename = basename($file);
+                } else {
+                    $filename .= '.' . substr(strrchr($file, '.'), 1);
+                }
 
-			header('Content-Description: File Transfer');
-			header('Content-Type: application/octet-stream');
-			header('Content-Disposition: attachment; filename=' . $filename);
-			header('Content-Transfer-Encoding: binary');
-			header('Expires: 0');
-			header('Cache-Control: must-revalidate');
-			header('Pragma: public');
-			header('Content-Length: ' . filesize($file));
-			ob_clean();
-			flush();
-			readfile($file);
+                $this->_fileHeaders($filename, filesize($file));
+                ob_clean();
+                flush();
+                readfile($file);
+                exit();
+            }
+            else
+            {
+                throw new Exception('Error: Could not find file ' . $file . '!');
+            }
+		}
+        elseif(is_string($file))
+        {
+            $this->_fileHeaders($filename . "." . $type, strlen($file));
+            ob_clean();
+            flush();
+            ob_start();
+            echo $file;
+            ob_end_flush();
+            exit();
+        }
+        else
+        {
+            throw new Exception('Error: you give to output buffer something wrong !');
+        }
 
-			exit();
-		}
-		else
-		{
-			trigger_error('Error: Could not find file ' . $file . '!');
-			exit();
-		}
 	}
+
+    // --------------------------------------------------------------------
+
+    /**
+     * return file stream to browser
+     *
+     * @access	public
+     * @param	string
+     * @param	string
+     */
+    protected function _fileHeaders($name, $size)
+    {
+        header('Content-Description: File Transfer');
+        header('Content-Type: application/octet-stream');
+        header('Content-Disposition: attachment; filename=' . $name);
+        header('Content-Transfer-Encoding: binary');
+        header('Expires: 0');
+        header('Cache-Control: must-revalidate');
+        header('Pragma: public');
+        header('Content-Length: ' . $size);
+    }
 
 	// --------------------------------------------------------------------
 

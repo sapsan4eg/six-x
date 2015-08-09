@@ -32,6 +32,7 @@ define('DIR_SHARED', 'Shared/');
 define('DIR_START', '../app_start/');
 define('DIR_IMAGE', 'image/');
 define('DIR_LANGUAGE', '../lang/');
+define('DIR_FILES', '../files/');
 
 /*
 |--------------------------------------------------------------------------

@@ -633,7 +633,7 @@ Class Protecter
     // --------------------------------------------------------------------
 
     /**
-     * Hiding all sibols to ?
+     * Hiding all simbols to ?
      *
      *
      * @param	string	$string
@@ -642,6 +642,44 @@ Class Protecter
     public static function escape($string)
     {
         return str_repeat("?", strlen($string));
+    }
+
+    // --------------------------------------------------------------------
+
+    /**
+     * Clening all injections
+     *
+     *
+     * @param	string	$string
+     * @return	string
+     */
+    public static function injection_clear($string)
+    {
+        $search = strtoupper($string);
+        $array = ['SET','INSERT','UPDATE','DELETE','REPLACE','CREATE','DROP','TRUNCATE','LOAD','COPY','ALTER','RENAME','GRANT','REVOKE','LOCK','UNLOCK','REINDEX'];
+        foreach($array As $value)
+        {
+            if(strpos($search , $value) !== FALSE)
+            {
+                $temp = substr($string, 0, strpos($search , $value));
+                $string = $temp . "[CORRUPTED]" . substr($string, strpos($search , $value) + strlen($value));
+            }
+        }
+        return $string;
+    }
+
+    // --------------------------------------------------------------------
+
+    /**
+     * Clening all injections
+     *
+     *
+     * @param	string	$string
+     * @return	string
+     */
+    public static function file_up($string)
+    {
+        return str_replace('../','[BADPATH]',$string);
     }
 }
 
