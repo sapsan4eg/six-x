@@ -5,7 +5,7 @@ class TestController extends Controller
 	{
 		$this->join->model('Main');
 		$this->MainModel->get_main_values();
-		$this->view->links = array('mainlink' => array('link' => $this->router->Link('Index', 'Home'), 'title' => ''));	
+		$this->view->links = array('mainlink' => $this->router->Link('Index', 'Home'));
 		return $this->view->ViewResult();
 	}
 	public function Json()
@@ -27,7 +27,7 @@ class TestController extends Controller
 	{
 		$this->join->model('Main');
 		$this->MainModel->get_main_values();
-		$this->view->links = array('mainlink' => array('link' => $this->router->Link('Index', 'Home'), 'title' => ''));	
+		$this->view->links = array('mainlink' => $this->router->Link('Index', 'Home'));
 		return $this->view->ViewResult('News', true, 'Home');
 	}
 }
