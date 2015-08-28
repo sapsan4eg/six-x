@@ -4,7 +4,7 @@
 <?php if(isset($localization_summer)){ echo $localization_summer;}?>
 <form action="<?php echo $link_form;?>" method="POST">
 	<input type="hidden" name="id" value="">
-<div class="panel panel-default" style="margin-top:20px;">
+<div class="panel panel-default">
 	<div class="panel-heading title">
 		<div class="row"><div class="col-md-9">	
 			<h4><?php if(isset($title)) echo $title;?></h4></div>

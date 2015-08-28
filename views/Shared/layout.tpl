@@ -39,9 +39,6 @@
 		<?php echo $RenderBody;?>
 	</div>
 	<div class="container">
-
-	</div>
-	<div class="container">
 	<div class="row"><div class="col-md-4" style="padding-top:10px;"><?php echo _('vendor');?>, <?php echo _('text_core_version');?>: <?php echo VERSION;?></div>
 		<div class="col-md-4 col-md-offset-4"></div>
 			<ol class="breadcrumb pull-right">

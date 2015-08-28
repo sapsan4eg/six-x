@@ -31,6 +31,13 @@ class Conveyor extends Object
 	 */
 	public function __construct()
 	{
+        /*
+         * ------------------------------------------------------
+         *  Get bundles
+         * ------------------------------------------------------
+         */
+        Bundles::create();
+
 		// instantiating Storage class
 		$this->_storage = new Storage();
 		
@@ -51,9 +58,6 @@ class Conveyor extends Object
 		
 		// instantiating Mui class
         \Six_x\Mui::start($this->db, $this->router->route['arguments'], $this->request->post,  $this->session, $this->request->cookie, $this->request->server);
-
-        // usefull functions
-        \Loader::load('usefull', DIR_HELPER);
 
 		// check need autorization to application
    		if(defined('AUTORIZATION'))

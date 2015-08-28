@@ -22,6 +22,29 @@ class AccountController extends Controller {
 		$this->view->links = array('mainlink' => $this->router->Link('Index', 'Home'));
 		return $this->view->ViewResult('UserProfile');
 	}
+    public function Access()
+    {
+        $this->join->model('Account/Access');
+        $this->AccountAccessModel->GetMain();
+        $this->view->controllers = $this->AccountAccessModel->ListControllers();
+        $this->view->groups = $this->AccountAccessModel->ListGroups();
+        $this->view->users = $this->AccountAccessModel->ListUSers();
+        $this->view->getPermissions = $this->router->Link('GetPermissions');
+        $this->view->to = 0;
+        $this->view->pervios = -1;
+        return $this->view->ViewResult();
+    }
+    public function GetPermissions()
+    {
+        if( ! empty($this->request->post['controller_name']))
+        {
+            $array = [];
+            $this->join->model('Account/Access');
+            $array = $this->AccountAccessModel->GetPermissions($this->request->post['controller_name']);
+            return $this->view->JsonResult($array);
+        }
+        return $this->view->RedirectToAction('not_found', 'Error');
+    }
 }
 
 /* End of file AccountController.php */

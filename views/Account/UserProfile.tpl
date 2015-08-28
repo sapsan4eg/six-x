@@ -1,4 +1,4 @@
-<div class="panel panel-default" style="margin-top:20px;">
+<div class="panel panel-default">
 	<div class="panel-heading">
 		<h3>Profile page of <?php if(isset($Identity['Name'])){ echo $Identity['Name'];}?></h3>
 	</div>

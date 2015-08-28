@@ -38,3 +38,29 @@ function validateDate($date, $format = 'Y-m-d H:i:s')
     $d = DateTime::createFromFormat($format, $date);
     return $d && $d->format($format) == $date;
 }
+/**
+ * Return html cleared string
+ *
+ * @param string    $string
+ * @return string
+ */
+function strip_html($string)
+{
+    $search = ['@<script[^>]*?>.*?</script>@si',  // Strip out javascript
+        '@<[\/\!]*?[^<>]*?>@si',                  // Strip out HTML tags
+        '@<style[^>]*?>.*?</style>@siU',          // Strip style tags properly
+        '@<![\s\S]*?--[ \t\n\r]*>@'               // Strip multi-line comments including CDATA
+    ];
+
+    $string = preg_replace($search, '', $string);
+    $string = str_replace([PHP_EOL, '	', '\r\n', '\n', '\r', '\v', '\t', '\e', '\f', '&nbsp;', '&copy;', '&mdash;', '0x0A', '0x0D', '0x09', '0x0B', ' 0x1B ' ], ' ', $string);
+
+    while(true) {
+        if(strpos($string, '  ') === FALSE) {
+            break;
+        }
+        $string = str_replace('  ', ' ', $string);
+    }
+
+    return $string;
+}

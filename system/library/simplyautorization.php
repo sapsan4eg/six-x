@@ -66,7 +66,7 @@ class SimplyAutorization extends Object {
 		$havePermission = TRUE;
 		$user_id = 0;
 
-		if(isset($this->session->data['user']) && isset($this->session->data['user_id']))
+		if( ! empty($this->session->data['user']) && ! empty($this->session->data['user_id']))
 		{
             // Select user in DB
 			$query = $this->db->query("SELECT * FROM `" . DB_PREFIX . "users` 
@@ -296,6 +296,7 @@ class SimplyAutorization extends Object {
 		if(is_array($permissions))
 		{
 			$notneedRoles = TRUE;
+
 			if(isset($permissions['Users']))
 			{
 				if(is_array($permissions['Users']))
@@ -305,7 +306,6 @@ class SimplyAutorization extends Object {
 				elseif($permissions == 'Autorize' & $user_id == 0)
 				{
 					$permission = FALSE;
-
 				}
 			}
 			else
@@ -323,33 +323,37 @@ class SimplyAutorization extends Object {
 					{
 						if($user_id > 0)
 						{
-							$querystring = "SELECT COUNT(t3.user_id) FROM `" . DB_PREFIX . "user_roles` t1, `" . DB_PREFIX . "user_roles` t2, `" . DB_PREFIX . "users_in_roles` t3 WHERE (";
-							foreach($permissions['Roles'] as $value)
-							{
-								$querystring .= "t1.role_name = '" . $value . "' OR ";
+                            $roles = "";
+                            foreach($permissions['Roles'] as $value)
+                            {
+                                $roles .= "'" . $value . "', ";
+                            }
+                            $roles = substr($roles, 0, strlen($roles) -2);
 
-							}
-
-							$querystring = substr($querystring,0, strlen($querystring) -3);
-
-							$querystring .= ") AND t2.role_to <= t1.role_to AND t2.role_from >= t1.role_from AND t3.user_id = " . $user_id ." AND t3.role_id = t2.role_id";
+							$querystring = "SELECT COUNT(uir.user_id) cnt
+                                              FROM `" . DB_PREFIX . "user_roles` pr
+                                              JOIN `" . DB_PREFIX . "user_roles` ur ON (
+                                                (ur.role_to <= pr.role_to AND ur.role_from >= pr.role_from OR ur.role_to >= pr.role_to AND ur.role_from <= pr.role_from)
+                                                    AND pr.role_name IN (" . $roles . ")
+                                                )
+                                              JOIN `" . DB_PREFIX . "users_in_roles` uir ON(uir.user_id = " . $user_id ." AND uir.role_id = ur.role_id)";
 
 							$query = $this->db->query($querystring);
 
-							if($query->first['COUNT(t3.user_id)'] > 0)
+							if($query->first['cnt'] > 0)
 							{
 								$permission = TRUE;
 							}
 						}
 					}
-					elseif($permissions == 'Autorize' & $user_id == 0)
+					elseif($permissions == 'Autorize' && $user_id == 0)
 					{
 						$permission = FALSE;
 					}
 				}
 			}
 		}
-		elseif($permissions == 'Autorize' & $user_id == 0)
+		elseif($permissions == 'Autorize' && $user_id == 0)
 		{
 			$permission = FALSE;
 		}

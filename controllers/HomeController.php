@@ -65,7 +65,6 @@ class HomeController extends Controller
 		}
 		return $this->view->JsonResult($array);
 	}
-
 }
 
 /* End of file HomeController.php */

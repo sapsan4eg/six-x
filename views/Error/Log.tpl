@@ -1,5 +1,5 @@
 <?php echo Bundles::getValue('awesome');?>
-<div class="panel panel-default" style="margin-top:20px;">
+<div class="panel panel-default">
 	<div class="panel-heading">
 
 		<div class="btn btn-danger pull-right" id="clearlog"><i class="fa fa-recycle"></i></div>
